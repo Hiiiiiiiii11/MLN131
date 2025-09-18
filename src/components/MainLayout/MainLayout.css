@@ -1,0 +1,152 @@
+.appContainer {
+    min-height: 100vh;
+}
+
+.appContainer .appHero {
+    width: 92%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    transition: all 0.3s ease;
+    padding-left: 30px;
+    padding-top: 50px;
+    padding-right: 30px;
+}
+
+.appContainer .appHero.collapsed {
+    width: 80%;
+    position: absolute;
+    right: 0;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #aaaaaa;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #707070;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+    body {
+        min-width: 1024px;
+    }
+
+    .appContainer {
+        width: 100%;
+    }
+
+    .navbar,
+    .navbar.extended {
+        right: 0;
+        width: 100%;
+        display: flex;
+    }
+
+    .navbar-right {
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        right: 20px;
+    }
+
+    .navbar-menu-icon {
+        display: none;
+    }
+
+    body:has(.UnderConstruction) .navbar,
+    body:has(.UnderConstruction) .navbar.extended {
+        width: 100%;
+        right: unset;
+        left: 0;
+    }
+
+    .sidebar,
+    .sidebar.closed {
+        position: fixed;
+        bottom: 0;
+        top: unset;
+        left: unset;
+        z-index: 98;
+        height: 60px;
+        background-color: #1a1d2a;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .sidebar-logo {
+        display: none;
+    }
+
+    .sidebar.closed ul,
+    .sidebar ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .sidebar ul span,
+    .sidebar.closed ul span {
+        display: none;
+    }
+
+    .sidebar ul .submenu,
+    .sidebar.closed ul .submenu {
+        display: none;
+    }
+
+    .sidebar ul li,
+    .sidebar.closed ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+        width: 10%;
+    }
+
+    .sidebar ul li img,
+    .sidebar.closed ul li img {
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+    .ant-radio-group.ant-radio-group-outline {
+        width: 50%;
+    }
+
+    .TrainerScheduleTrackerPage .table-report-container .ant-btn {
+        transform: translateY(-150%);
+    }
+}
+
+.back-trainer-list {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    border-width: 2px;
+    cursor: pointer;
+}
