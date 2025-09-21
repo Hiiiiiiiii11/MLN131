@@ -1,11 +1,14 @@
 .navbar-container {
-    background: linear-gradient(90deg, #2c3e50 0%, #3498db 100%); /* Gradient tối giản, sang trọng */
+    background: linear-gradient(90deg, #2c3e50 0%, #3498db 100%);
     padding: 10px 50px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-    position: relative;
+    position: fixed; /* Cố định Navbar */
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
-    font-family: 'Roboto', sans-serif; /* Font hiện đại */
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Top Bar */
@@ -28,7 +31,7 @@
 .logo {
     font-size: 28px;
     font-weight: 900;
-    color: #e74c3c; /* Màu đỏ nổi bật cho chủ đề Marx-Lenin */
+    color: #e74c3c;
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -37,7 +40,7 @@
 
 .logo-sub {
     font-size: 14px;
-    color: #3498db; /* Màu xanh dương hài hòa */
+    color: #3498db;
     font-style: italic;
     display: block;
     text-shadow: 1px 1px 3px rgba(52, 152, 219, 0.3);

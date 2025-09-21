@@ -1,29 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { MailOutlined, PhoneOutlined, FacebookOutlined, TwitterOutlined, InstagramOutlined, SearchOutlined } from "@ant-design/icons";
 import { Input, Space } from 'antd';
-import { useNavigate } from "react-router";
-import { useDispatch, useSelector } from "react-redux";
-import { changeLanguageApp } from "../../actions/appActions"; // Điều chỉnh đường dẫn cho đúng
-import { LANGUAGES } from "../../utils/constant";
 import "./Navbar.css";
 
 const Navbar = () => {
-    const navigate = useNavigate();
-    const dispatch = useDispatch();
-
-    // Lấy ngôn ngữ hiện tại từ Redux store
-    const language = useSelector((state) => state.language || LANGUAGES.VI);
+    const [language, setLanguage] = useState("VI"); // State nội bộ cho ngôn ngữ
 
     // Hàm xử lý chuyển ngôn ngữ
     const handleLanguageChange = (newLanguage) => {
-        dispatch(changeLanguageApp(newLanguage));
+        setLanguage(newLanguage);
     };
 
     return (
         <div className="navbar-container">
-    
             <div className="top-bar">
-               
                 <div className="logo-section">
                     <h1 className="logo">Triết Học Marx–Lenin</h1>
                     <span className="logo-sub">MLN131</span>
@@ -63,14 +53,14 @@ const Navbar = () => {
                 </div>
                 <div className="language-section">
                     <span
-                        onClick={() => handleLanguageChange(LANGUAGES.VI)}
-                        className={`language-toggle ${language === LANGUAGES.VI ? "selected" : ""}`}
+                        onClick={() => handleLanguageChange("VI")}
+                        className={`language-toggle ${language === "VI" ? "selected" : ""}`}
                     >
                         VN
                     </span>
                     <span
-                        onClick={() => handleLanguageChange(LANGUAGES.EN)}
-                        className={`language-toggle ${language === LANGUAGES.EN ? "selected" : ""}`}
+                        onClick={() => handleLanguageChange("EN")}
+                        className={`language-toggle ${language === "EN" ? "selected" : ""}`}
                     >
                         EN
                     </span>

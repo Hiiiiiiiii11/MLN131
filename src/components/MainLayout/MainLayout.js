@@ -7,9 +7,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './MainLayout.css';
 import Homepage from "../../pages/Home/Homepage";
+
 const MainLayout = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
     const [selectedMenu, setSelectedMenu] = useState('');
+    const [isScrollButtonVisible, setIsScrollButtonVisible] = useState(false); // State cho nút lên đầu trang
     const navigate = useNavigate();
     const location = useLocation();
 
@@ -28,6 +30,24 @@ const MainLayout = () => {
             }
         }
     }, [navigate]);
+
+    // Xử lý hiển thị nút lên đầu trang khi cuộn
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 300) { // Hiển thị nút khi cuộn quá 300px
+                setIsScrollButtonVisible(true);
+            } else {
+                setIsScrollButtonVisible(false);
+            }
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    // Hàm cuộn lên đầu trang
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
 
     // Cấu hình cho Slider
     const sliderSettings = {
@@ -70,6 +90,11 @@ const MainLayout = () => {
                 <Outlet />
             </div>
             <Footer />
+            {isScrollButtonVisible && (
+                <button className="scroll-to-top" onClick={scrollToTop}>
+                    ↑
+                </button>
+            )}
         </div>
     );
 };
