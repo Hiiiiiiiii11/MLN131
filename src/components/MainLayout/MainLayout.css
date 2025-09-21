@@ -1,5 +1,68 @@
 .appContainer {
     min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-message {
+  background-color: white;
+    color: #ecf0f1; /* Màu chữ sáng */
+    padding: 15px 30px; /* Padding để tạo khoảng cách */
+    font-size: 18px; /* Kích thước chữ lớn hơn */
+    font-weight: 600; /* Độ đậm vừa phải */
+    text-align: center; /* Căn giữa */
+    overflow: hidden; /* Ngăn tràn nội dung */
+    white-space: nowrap; /* Ngăn xuống dòng */
+    position: relative; /* Để điều chỉnh vị trí */
+  
+ 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Bóng đổ nhẹ */
+}
+
+/* Hiệu ứng chạy chữ (marquee) */
+.welcome-message a {
+    display: inline-block;
+    animation: marquee 16s linear infinite; /* Chạy liên tục trong 12 giây */
+    padding-left: 100%; /* Bắt đầu từ ngoài khung */
+    color: red; /* Màu chữ */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    font-family: 'Roboto', sans-serif; /* Font hiện đại */
+}
+
+/* Định nghĩa animation */
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Hover effect (nếu cần) */
+.welcome-message:hover a {
+    animation-play-state: paused; /* Tạm dừng khi hover */
+    color: #e74c3c; /* Thay đổi màu khi hover */
+    text-shadow: 0 0 10px rgba(231, 76, 60, 0.5); /* Hiệu ứng glow */
+}
+
+.slider-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.slider-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, opacity 0.3s ease;
+    opacity: 0.95;
+}
+
+.slider-image:hover {
+    transform: scale(1.03);
+    opacity: 1;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .appContainer .appHero {
@@ -8,9 +71,8 @@
     position: absolute;
     right: 0;
     transition: all 0.3s ease;
-    padding-left: 30px;
-    padding-top: 50px;
-    padding-right: 30px;
+    padding: 50px 30px 20px 30px;
+    flex-grow: 1;
 }
 
 .appContainer .appHero.collapsed {
@@ -73,67 +135,25 @@
         left: 0;
     }
 
-    .sidebar,
-    .sidebar.closed {
-        position: fixed;
-        bottom: 0;
-        top: unset;
-        left: unset;
-        z-index: 98;
-        height: 60px;
-        background-color: #1a1d2a;
-        color: white;
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        overflow-x: hidden;
-    }
-
-    .sidebar-logo {
-        display: none;
-    }
-
-    .sidebar.closed ul,
-    .sidebar ul {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    .sidebar ul span,
-    .sidebar.closed ul span {
-        display: none;
-    }
-
-    .sidebar ul .submenu,
-    .sidebar.closed ul .submenu {
-        display: none;
-    }
-
-    .sidebar ul li,
-    .sidebar.closed ul li {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 6px;
-        width: 10%;
-    }
-
-    .sidebar ul li img,
-    .sidebar.closed ul li img {
-        margin: 0;
-        padding: 0;
-    }
-
-
-
     .ant-radio-group.ant-radio-group-outline {
         width: 50%;
     }
 
     .TrainerScheduleTrackerPage .table-report-container .ant-btn {
         transform: translateY(-150%);
+    }
+
+    .slider-container {
+        max-width: 90%;
+    }
+
+    .slider-image {
+        height: 350px;
+    }
+
+    .welcome-message {
+        font-size: 16px; /* Giảm kích thước chữ trên màn hình nhỏ */
+        padding: 10px 20px; /* Giảm padding */
     }
 }
 
@@ -149,4 +169,5 @@
     font-size: 15px;
     border-width: 2px;
     cursor: pointer;
+    z-index: 1000;
 }
