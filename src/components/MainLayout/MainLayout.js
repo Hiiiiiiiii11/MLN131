@@ -6,7 +6,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './MainLayout.css';
-
+import Homepage from "../../pages/Home/Homepage";
 const MainLayout = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
     const [selectedMenu, setSelectedMenu] = useState('');
@@ -54,9 +54,8 @@ const MainLayout = () => {
         <div className="appContainer">
             <Navbar toggleSidebar={toggleSidebar} />
             <div className="welcome-message">
-                <a>Chào mừng đã đến với website nói về lịch sử về chủ đề CNXH Không Tưởng và  CNXH Khoa Học</a>
-                </div>
-                
+                <a>Chào mừng đã đến với website nói về lịch sử về chủ đề CNXH Không Tưởng và CNXH Khoa Học</a>
+            </div>
             <div className="slider-container">
                 <Slider {...sliderSettings}>
                     {images.map((image, index) => (
@@ -65,12 +64,12 @@ const MainLayout = () => {
                         </a>
                     ))}
                 </Slider>
+                <Homepage />
             </div>
             <div className={`appHero ${isSidebarOpen ? "collapsed" : ""}`}>
                 <Outlet />
             </div>
             <Footer />
-         
         </div>
     );
 };
