@@ -7,6 +7,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { PlayCircleOutlined } from "@ant-design/icons"; // Icon chơi game
 import './MainLayout.css';
+import photo1 from '../../assets/photo1.png';
+import photo2 from '../../assets/photo2.png';
+import photo3 from '../../assets/photo3.png';
+import photo4 from '../../assets/photo4.png';
+import photo5 from '../../assets/photo5.png';
 
 import Minigamepage from "../Minigame/Minigamepage"; // Import component Minigamepage
 
@@ -55,20 +60,20 @@ const MainLayout = () => {
     const sliderSettings = {
         dots: true,
         infinite: true,
-        speed: 1500,
+        speed: 500, // Transition speed in ms
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 3000, // 3 seconds
         arrows: true,
     };
 
     const images = [
-        { url: "https://luatduonggia.vn/wp-content/uploads/2024/09/chu-nghia-xa-hoi-khong-tuong-la-gi-tich-cuc-va-han-che.png", link: "https://example.com/image1" },
-        { url: "https://nghiencuulichsu.com/wp-content/uploads/2020/08/capitalism_vs__communism_by_therazgar-d696kv7.png-1024x695-1.jpg", link: "https://example.com/image2" },
-        { url: "https://cdn.thuvienphapluat.vn/uploads/laodongtienluong/20230301/PDP/hinh-anh-2638.jpg", link: "https://example.com/image3" },
-        { url: "https://tuyenquang.dcs.vn/Image/Large/20218278521_48282.jpg", link: "https://example.com/image4" },
-        { url: "https://usth.edu.vn/wp-content/uploads/2021/12/6-cap-pham-tru-triet-hoc-mac-lenin-1.png", link: "https://example.com/image5" },
+        { url: photo1, link: "#1" },
+        { url: photo2, link: "#2" },
+        { url: photo3, link: "#3" },
+        { url: photo4, link: "#4" },
+        { url: photo5, link: "#5" },
     ];
 
     return (
@@ -89,6 +94,7 @@ const MainLayout = () => {
                         </a>
                     ))}
                 </Slider>
+
 
 
 
