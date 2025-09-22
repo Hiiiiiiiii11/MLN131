@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router";
 import HomePage from "../pages/Home/Homepage";
 import MainLayout from "../components/MainLayout/MainLayout";
 import Infographic from "../pages/Infographic/Infographic";
+import Introduction from "../components/Introduct/Introductionpage";
 
 
 
@@ -24,7 +25,11 @@ export const router = createBrowserRouter([
                 path: "/infographic", // tương đương với /layout
                 element: <Infographic />,
             },
-           
+            {
+                path: "/introduction", // tương đương với /layout
+                element: <Introduction />,
+            },
+
         ]
     }
 ]);

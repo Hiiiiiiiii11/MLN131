@@ -8,7 +8,6 @@ import "slick-carousel/slick/slick-theme.css";
 import { PlayCircleOutlined } from "@ant-design/icons"; // Icon chơi game
 import './MainLayout.css';
 
-import Introductionpage from "../Introduct/Introductionpage";
 import Minigamepage from "../Minigame/Minigamepage"; // Import component Minigamepage
 
 
@@ -77,8 +76,8 @@ const MainLayout = () => {
             <Navbar toggleSidebar={toggleSidebar} />
             <div className="welcome-message">
                 <a href="#">
-                    🌍 Chào mừng bạn đến với website lịch sử – nơi khám phá hành trình từ Chủ nghĩa Xã hội Không Tưởng 
-                    đến Chủ nghĩa Xã hội Khoa Học ✨. 
+                    🌍 Chào mừng bạn đến với website lịch sử – nơi khám phá hành trình từ Chủ nghĩa Xã hội Không Tưởng
+                    đến Chủ nghĩa Xã hội Khoa Học ✨.
                     Cùng tìm hiểu những tư tưởng, con người và bước ngoặt đã làm thay đổi tiến trình nhân loại!
                 </a>
             </div>
@@ -91,8 +90,6 @@ const MainLayout = () => {
                     ))}
                 </Slider>
 
-                <Homepage />
-                <Introductionpage />
 
 
             </div>
@@ -107,13 +104,13 @@ const MainLayout = () => {
                 </button>
             )}
             {/* Icon chơi game mở popup */}
-         <div className="game-icon" onClick={() => setIsGamePopupOpen(true)}>
-  <img 
-    src="https://www.emojiall.com/images/60/joypixels/1f3ae.png" 
-    alt="Game Icon" 
-    style={{ width: "48px", height: "48px", cursor: "pointer" }}
-  />
-</div>
+            <div className="game-icon" onClick={() => setIsGamePopupOpen(true)}>
+                <img
+                    src="https://www.emojiall.com/images/60/joypixels/1f3ae.png"
+                    alt="Game Icon"
+                    style={{ width: "48px", height: "48px", cursor: "pointer" }}
+                />
+            </div>
 
 
             {/* Popup Mini-Quiz */}
