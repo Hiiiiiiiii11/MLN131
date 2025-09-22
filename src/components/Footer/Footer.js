@@ -1,5 +1,6 @@
 import React from "react";
 import { Space } from 'antd';
+import { FacebookOutlined, TwitterOutlined, InstagramOutlined } from "@ant-design/icons";
 import './Footer.css';
 
 const Footer = () => {
@@ -18,17 +19,19 @@ const Footer = () => {
                 </div>
                 <div className="footer-section">
                     <h3>Theo dõi chúng tôi</h3>
-                    <Space size="medium">
+                    <div className="social-section">
+
                         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-                            <i className="fab fa-facebook-f"></i>
+                            <FacebookOutlined style={{ color: "#4267B2", fontSize: "22px" }} />
                         </a>
                         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-                            <i className="fab fa-twitter"></i>
+                            <TwitterOutlined style={{ color: "#1DA1F2", fontSize: "22px" }} />
                         </a>
                         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-                            <i className="fab fa-instagram"></i>
+                            <InstagramOutlined style={{ color: "#E4405F", fontSize: "22px" }} />
                         </a>
-                    </Space>
+
+                    </div>
                 </div>
             </div>
             <div className="footer-bottom">

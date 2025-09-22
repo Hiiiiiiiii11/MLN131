@@ -3,7 +3,8 @@
     padding: 10px 50px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-    position: fixed; /* Cố định Navbar */
+    position: fixed;
+    /* Cố định Navbar */
     top: 0;
     left: 0;
     right: 0;
@@ -11,12 +12,13 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
 /* Top Bar */
 .top-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 10px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     backdrop-filter: blur(10px);
@@ -26,6 +28,12 @@
 .logo-section {
     text-align: center;
     flex-grow: 1;
+}
+
+.social-section {
+    /* min-width: 200px; */
+    display: flex;
+    gap: 15px;
 }
 
 .logo {
@@ -62,12 +70,18 @@
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
+.nav-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 /* Bottom Bar */
 .bottom-bar {
     display: flex;
-    justify-content: space-between;
+
     align-items: center;
-    padding: 10px 0;
+    padding: 10px;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 10px;
     backdrop-filter: blur(10px);
@@ -83,7 +97,8 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.search-input:hover, .search-input:focus {
+.search-input:hover,
+.search-input:focus {
     border-color: #e74c3c;
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 6px 15px rgba(231, 76, 60, 0.2);
@@ -142,7 +157,8 @@
     background: rgba(255, 255, 255, 0.1);
 }
 
-.language-toggle:hover, .language-toggle.selected {
+.language-toggle:hover,
+.language-toggle.selected {
     color: #e74c3c;
     background: rgba(231, 76, 60, 0.15);
     text-shadow: 0 0 8px rgba(231, 76, 60, 0.4);
@@ -151,4 +167,10 @@
 
 .language-toggle:not(:last-child) {
     margin-right: 15px;
+}
+
+.nav-item.selected {
+    font-weight: bold;
+    color: #1890ff;
+    border-bottom: 2px solid #1890ff;
 }
