@@ -1,8 +1,9 @@
 import React from "react";
+
 import { Space } from 'antd';
 import { FacebookOutlined, TwitterOutlined, InstagramOutlined } from "@ant-design/icons";
 import './Footer.css';
-
+import {  FacebookOutlined, TwitterOutlined, InstagramOutlined } from "@ant-design/icons";
 const Footer = () => {
     return (
         <footer className="footer">
@@ -15,12 +16,11 @@ const Footer = () => {
                     <h3>Liên hệ</h3>
                     <p>Email: info@mln131.com</p>
                     <p>Điện thoại: 090 123 4567</p>
-                    <p>Địa chỉ: 123 Đường Triết Học, TP. Hà Nội</p>
+                    <p>Địa chỉ: hẽm 32 Võ Văn Hát Phường Long Trường TP Thủ Đức TP Hồ Chí Minh</p>
                 </div>
                 <div className="footer-section">
                     <h3>Theo dõi chúng tôi</h3>
                     <div className="social-section">
-
                         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon">
                             <FacebookOutlined style={{ color: "#4267B2", fontSize: "22px" }} />
                         </a>

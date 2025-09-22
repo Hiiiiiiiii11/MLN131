@@ -24,14 +24,7 @@ export const router = createBrowserRouter([
                 path: "/infographic", // tương đương với /layout
                 element: <Infographic />,
             },
-            // {
-            //     path: "/side-bar3", // tương đương với /layout
-            //     element: <Develop />,
-            // },
-            // {
-            //     path: "/side-bar4", // tương đương với /layout
-            //     element: <Refference />,
-            // },
+           
         ]
     }
 ]);

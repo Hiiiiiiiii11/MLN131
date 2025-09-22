@@ -100,6 +100,7 @@ const Navbar = () => {
                         >
                             Blog
                         </span>
+
                     </Space>
                 </div>
                 <div className="language-section">
