@@ -2,7 +2,8 @@ import React from "react";
 import { createBrowserRouter } from "react-router";
 import HomePage from "../pages/Home/Homepage";
 import MainLayout from "../components/MainLayout/MainLayout";
-import BlogPage from "../components/Blog/Blogpage";
+import Infographic from "../pages/Infographic/Infographic";
+
 
 
 
@@ -11,14 +12,18 @@ export const router = createBrowserRouter([
         path: "/",
         element: <MainLayout />,
         children: [
-            // {
-            //     path: "/side-bar1", // tương đương với /layout
-            //     element: <HomePage />,
-            // },
-            // {
-            //     path: "/blog", // Trang Blog
-            //     element: <BlogPage />,
-            // },
+            {
+                index: true,              // 👈 khi vào "/" sẽ tự load HomePage
+                element: <HomePage />,
+            },
+            {
+                path: "/home", // tương đương với /layout
+                element: <HomePage />,
+            },
+            {
+                path: "/infographic", // tương đương với /layout
+                element: <Infographic />,
+            },
            
         ]
     }

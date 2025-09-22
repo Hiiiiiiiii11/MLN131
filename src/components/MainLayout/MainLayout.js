@@ -7,9 +7,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { PlayCircleOutlined } from "@ant-design/icons"; // Icon chơi game
 import './MainLayout.css';
-import Homepage from "../../pages/Home/Homepage";
+
 import Introductionpage from "../Introduct/Introductionpage";
 import Minigamepage from "../Minigame/Minigamepage"; // Import component Minigamepage
+
+
 
 const MainLayout = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -88,9 +90,13 @@ const MainLayout = () => {
                         </a>
                     ))}
                 </Slider>
+
                 <Homepage />
                 <Introductionpage />
+
+
             </div>
+            {/* Chỉ render nội dung route */}
             <div className={`appHero ${isSidebarOpen ? "collapsed" : ""}`}>
                 <Outlet />
             </div>

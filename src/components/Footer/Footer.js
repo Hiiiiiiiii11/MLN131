@@ -1,5 +1,7 @@
 import React from "react";
-import { Space,  } from 'antd';
+
+import { Space } from 'antd';
+import { FacebookOutlined, TwitterOutlined, InstagramOutlined } from "@ant-design/icons";
 import './Footer.css';
 import {  FacebookOutlined, TwitterOutlined, InstagramOutlined } from "@ant-design/icons";
 const Footer = () => {
@@ -19,18 +21,17 @@ const Footer = () => {
                 <div className="footer-section">
                     <h3>Theo dõi chúng tôi</h3>
                     <div className="social-section">
-                                       <Space size="medium">
-                                           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                               <FacebookOutlined style={{ color: "#4267B2", fontSize: "22px" }} />
-                                           </a>
-                                           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                               <TwitterOutlined style={{ color: "#1DA1F2", fontSize: "22px" }} />
-                                           </a>
-                                           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                               <InstagramOutlined style={{ color: "#E4405F", fontSize: "22px" }} />
-                                           </a>
-                                       </Space>
-                                   </div>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+                            <FacebookOutlined style={{ color: "#4267B2", fontSize: "22px" }} />
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+                            <TwitterOutlined style={{ color: "#1DA1F2", fontSize: "22px" }} />
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+                            <InstagramOutlined style={{ color: "#E4405F", fontSize: "22px" }} />
+                        </a>
+
+                    </div>
                 </div>
             </div>
             <div className="footer-bottom">

@@ -1,0 +1,48 @@
+.infographic-intro,
+.infographic-conclusion {
+    padding: 0px 20px;
+    background: #fff;
+    font-size: 18px;
+}
+
+.infographic-intro h1 {
+    color: #e74c3c;
+    display: flex;
+    justify-content: center;
+}
+
+.infographic-intro div,
+.infographic-conclusion div {
+    text-align: justify;
+    line-height: 1.6;
+    color: #333;
+    font-size: 20px;
+}
+
+.infographic-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.compare-card,
+.timeline-card {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ant-card-head-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.infographic-container {
+    padding: 30px;
+}
+
+.intro-card,
+.compare-card,
+.timeline-card,
+.conclusion-card {
+    margin-bottom: 30px;
+}
