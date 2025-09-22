@@ -13,6 +13,10 @@ export const router = createBrowserRouter([
         element: <MainLayout />,
         children: [
             {
+                index: true,              // 👈 khi vào "/" sẽ tự load HomePage
+                element: <HomePage />,
+            },
+            {
                 path: "/home", // tương đương với /layout
                 element: <HomePage />,
             },

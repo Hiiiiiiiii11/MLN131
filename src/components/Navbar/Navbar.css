@@ -1,17 +1,28 @@
 .navbar-container {
-    background: linear-gradient(90deg, #2c3e50 0%, #3498db 100%);
     padding: 10px 50px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
     position: fixed;
-    /* Cố định Navbar */
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
     font-family: 'Roboto', sans-serif;
+    transition: background 0.5s ease, backdrop-filter 0.5s ease;
 }
 
+/* Màu nền khi đứng yên */
+.navbar-container.solid {
+    background: linear-gradient(90deg, #2c3e50 0%, #3498db 100%);
+}
+
+/* Trong mờ khi scroll */
+.navbar-container.transparent {
+    background: rgba(44, 62, 80, 0.4);
+    /* màu tối mờ */
+    backdrop-filter: blur(8px);
+    /* glass effect */
+}
 
 /* Top Bar */
 .top-bar {
