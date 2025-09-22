@@ -48,7 +48,7 @@ const Navbar = () => {
                         <span className="nav-item">Introduction</span>
                         <span className="nav-item">Infographic</span>
                         <span className="nav-item">Interactive Section</span>
-                        <span className="nav-item">Blog</span>
+                        <span className="nav-item">Blog </span>
                     </Space>
                 </div>
                 <div className="language-section">

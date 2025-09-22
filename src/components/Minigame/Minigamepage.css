@@ -1,0 +1,174 @@
+.interactive-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 25px;
+    background: linear-gradient(135deg, #f5f7fa, #e3e8ee); /* Gradient nền nhẹ nhàng */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.interactive-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #3498db, #2ecc71); /* Gradient viền trên */
+    border-radius: 15px 15px 0 0;
+}
+
+.interactive-section h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.question {
+    font-size: 20px;
+    color: #34495e;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    animation: slideUp 0.6s ease-in-out;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.option-btn {
+    padding: 12px 18px;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(135deg, #3498db, #2980b9); /* Gradient xanh */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.2);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.option-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: all 0.6s;
+}
+
+.option-btn:hover::before {
+    left: 100%;
+}
+
+.option-btn:hover {
+    background: linear-gradient(135deg, #2980b9, #1f618d);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(52, 152, 219, 0.3);
+}
+
+.option-btn.correct {
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    animation: celebrate 0.8s ease-in-out;
+}
+
+.option-btn.wrong {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    animation: shake 0.5s ease-in-out;
+}
+
+.option-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+    transform: none;
+    box-shadow: none;
+}
+
+.feedback {
+    font-size: 16px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes slideDown {
+    from { transform: translateY(-10px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  @keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  @keyframes bounceIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); opacity: 1; }
+  }
+
+.explanation {
+    margin-top: 20px;
+    padding: 15px;
+    background: #fff;
+    border-left: 5px solid #3498db;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #555;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.explanation p {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .interactive-section {
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .interactive-section h2 {
+        font-size: 24px;
+    }
+
+    .question {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .option-btn {
+        font-size: 15px;
+        padding: 10px 15px;
+    }
+
+    .explanation {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

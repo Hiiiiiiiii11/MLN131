@@ -1,7 +1,7 @@
 import React from "react";
-import { Space } from 'antd';
+import { Space,  } from 'antd';
 import './Footer.css';
-
+import {  FacebookOutlined, TwitterOutlined, InstagramOutlined } from "@ant-design/icons";
 const Footer = () => {
     return (
         <footer className="footer">
@@ -14,21 +14,23 @@ const Footer = () => {
                     <h3>Liên hệ</h3>
                     <p>Email: info@mln131.com</p>
                     <p>Điện thoại: 090 123 4567</p>
-                    <p>Địa chỉ: 123 Đường Triết Học, TP. Hà Nội</p>
+                    <p>Địa chỉ: hẽm 32 Võ Văn Hát Phường Long Trường TP Thủ Đức TP Hồ Chí Minh</p>
                 </div>
                 <div className="footer-section">
                     <h3>Theo dõi chúng tôi</h3>
-                    <Space size="medium">
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-                            <i className="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-                            <i className="fab fa-twitter"></i>
-                        </a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-                            <i className="fab fa-instagram"></i>
-                        </a>
-                    </Space>
+                    <div className="social-section">
+                                       <Space size="medium">
+                                           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                               <FacebookOutlined style={{ color: "#4267B2", fontSize: "22px" }} />
+                                           </a>
+                                           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                               <TwitterOutlined style={{ color: "#1DA1F2", fontSize: "22px" }} />
+                                           </a>
+                                           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                               <InstagramOutlined style={{ color: "#E4405F", fontSize: "22px" }} />
+                                           </a>
+                                       </Space>
+                                   </div>
                 </div>
             </div>
             <div className="footer-bottom">

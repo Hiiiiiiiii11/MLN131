@@ -5,13 +5,17 @@ import Footer from "../Footer/Footer";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { PlayCircleOutlined } from "@ant-design/icons"; // Icon chơi game
 import './MainLayout.css';
 import Homepage from "../../pages/Home/Homepage";
+import Introductionpage from "../Introduct/Introductionpage";
+import Minigamepage from "../Minigame/Minigamepage"; // Import component Minigamepage
 
 const MainLayout = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
     const [selectedMenu, setSelectedMenu] = useState('');
-    const [isScrollButtonVisible, setIsScrollButtonVisible] = useState(false); // State cho nút lên đầu trang
+    const [isScrollButtonVisible, setIsScrollButtonVisible] = useState(false);
+    const [isGamePopupOpen, setIsGamePopupOpen] = useState(false); // State cho popup
     const navigate = useNavigate();
     const location = useLocation();
 
@@ -31,10 +35,9 @@ const MainLayout = () => {
         }
     }, [navigate]);
 
-    // Xử lý hiển thị nút lên đầu trang khi cuộn
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 300) { // Hiển thị nút khi cuộn quá 300px
+            if (window.scrollY > 300) {
                 setIsScrollButtonVisible(true);
             } else {
                 setIsScrollButtonVisible(false);
@@ -44,24 +47,21 @@ const MainLayout = () => {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    // Hàm cuộn lên đầu trang
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
-    // Cấu hình cho Slider
     const sliderSettings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 1500,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 1000,
         arrows: true,
     };
 
-    // Danh sách hình ảnh với liên kết
     const images = [
         { url: "https://luatduonggia.vn/wp-content/uploads/2024/09/chu-nghia-xa-hoi-khong-tuong-la-gi-tich-cuc-va-han-che.png", link: "https://example.com/image1" },
         { url: "https://nghiencuulichsu.com/wp-content/uploads/2020/08/capitalism_vs__communism_by_therazgar-d696kv7.png-1024x695-1.jpg", link: "https://example.com/image2" },
@@ -74,7 +74,11 @@ const MainLayout = () => {
         <div className="appContainer">
             <Navbar toggleSidebar={toggleSidebar} />
             <div className="welcome-message">
-                <a>Chào mừng đã đến với website nói về lịch sử về chủ đề CNXH Không Tưởng và CNXH Khoa Học</a>
+                <a href="#">
+                    🌍 Chào mừng bạn đến với website lịch sử – nơi khám phá hành trình từ Chủ nghĩa Xã hội Không Tưởng 
+                    đến Chủ nghĩa Xã hội Khoa Học ✨. 
+                    Cùng tìm hiểu những tư tưởng, con người và bước ngoặt đã làm thay đổi tiến trình nhân loại!
+                </a>
             </div>
             <div className="slider-container">
                 <Slider {...sliderSettings}>
@@ -85,6 +89,7 @@ const MainLayout = () => {
                     ))}
                 </Slider>
                 <Homepage />
+                <Introductionpage />
             </div>
             <div className={`appHero ${isSidebarOpen ? "collapsed" : ""}`}>
                 <Outlet />
@@ -94,6 +99,25 @@ const MainLayout = () => {
                 <button className="scroll-to-top" onClick={scrollToTop}>
                     ↑
                 </button>
+            )}
+            {/* Icon chơi game mở popup */}
+         <div className="game-icon" onClick={() => setIsGamePopupOpen(true)}>
+  <img 
+    src="https://www.emojiall.com/images/60/joypixels/1f3ae.png" 
+    alt="Game Icon" 
+    style={{ width: "48px", height: "48px", cursor: "pointer" }}
+  />
+</div>
+
+
+            {/* Popup Mini-Quiz */}
+            {isGamePopupOpen && (
+                <div className="game-popup-overlay" onClick={() => setIsGamePopupOpen(false)}>
+                    <div className="game-popup" onClick={(e) => e.stopPropagation()}>
+                        <button className="close-btn" onClick={() => setIsGamePopupOpen(false)}>×</button>
+                        <Minigamepage onClose={() => setIsGamePopupOpen(false)} /> {/* Gọi component Minigamepage */}
+                    </div>
+                </div>
             )}
         </div>
     );
