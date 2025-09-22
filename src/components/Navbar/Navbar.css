@@ -55,6 +55,7 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     text-shadow: 2px 2px 4px rgba(231, 76, 60, 0.3);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .logo-sub {
