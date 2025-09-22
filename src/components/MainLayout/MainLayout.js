@@ -33,13 +33,13 @@ const MainLayout = () => {
         setSelectedMenu(menuItem);
     };
 
-    useEffect(() => {
-        if (window.performance) {
-            if (performance.getEntriesByType("navigation")[0].type === "reload") {
-                // navigate(`/layout/${role}`);
-            }
-        }
-    }, [navigate]);
+    // useEffect(() => {
+    //     if (window.performance) {
+    //         if (performance.getEntriesByType("navigation")[0].type === "reload") {
+    //             // navigate(`/layout/${role}`);
+    //         }
+    //     }
+    // }, [navigate]);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -89,15 +89,17 @@ const MainLayout = () => {
             <div className="slider-container">
                 <Slider {...sliderSettings}>
                     {images.map((image, index) => (
-                        <a href={image.link} target="_blank" rel="noopener noreferrer" key={index}>
-                            <img src={image.url} alt={`Slide ${index + 1}`} className="slider-image" />
-                        </a>
+                        <div key={index}>
+                            <a href={image.link} target="_blank" rel="noopener noreferrer">
+                                <img
+                                    src={image.url}
+                                    alt={`Slide ${index + 1}`}
+                                    className="slider-image"
+                                />
+                            </a>
+                        </div>
                     ))}
                 </Slider>
-
-
-
-
             </div>
             {/* Chỉ render nội dung route */}
             <div className={`appHero ${isSidebarOpen ? "collapsed" : ""}`}>
