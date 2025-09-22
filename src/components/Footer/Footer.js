@@ -3,7 +3,7 @@ import React from "react";
 import { Space } from 'antd';
 import { FacebookOutlined, TwitterOutlined, InstagramOutlined } from "@ant-design/icons";
 import './Footer.css';
-import {  FacebookOutlined, TwitterOutlined, InstagramOutlined } from "@ant-design/icons";
+
 const Footer = () => {
     return (
         <footer className="footer">

@@ -3,7 +3,8 @@
     margin: 0 auto;
     padding: 30px 20px;
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #f5f7fa, #e0e7f0); /* Gradient nền nhẹ nhàng */
+    background: linear-gradient(135deg, #f5f7fa, #e0e7f0);
+    /* Gradient nền nhẹ nhàng */
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
@@ -11,7 +12,8 @@
 .home-header-section {
     text-align: center;
     padding: 50px 30px;
-    background: linear-gradient(90deg, #2c3e50, #3498db); /* Gradient xanh đậm */
+    background: linear-gradient(90deg, #2c3e50, #3498db);
+    /* Gradient xanh đậm */
     color: #ecf0f1;
     border-radius: 15px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
@@ -44,6 +46,7 @@
     letter-spacing: 3px;
     text-shadow: 3px 3px 8px rgba(231, 76, 60, 0.5);
     animation: slideDown 1.8s ease-in-out;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .home-subtitle {
@@ -94,13 +97,27 @@
 /* Hiệu ứng animation */
 @keyframes fadeIn {
 
-    0% { opacity: 0; transform: scale(0.95); }
-    100% { opacity: 1; transform: scale(1); }
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 @keyframes slideDown {
-    0% { opacity: 0; transform: translateY(-30px); }
-    100% { opacity: 1; transform: translateY(0); }
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 
     0% {
         opacity: 0;

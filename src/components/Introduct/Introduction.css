@@ -37,12 +37,13 @@
 }
 
 .subtitle {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 800;
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 3px;
     animation: fadeInDown 1.5s ease-in-out;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .content-section {
@@ -183,9 +184,12 @@
     padding: 30px;
     border-radius: 20px;
     text-align: center;
-    width: 700px; /* Kích thước cố định */
-    max-height: 90vh; /* Giới hạn chiều cao */
-    overflow-y: auto; /* Cuộn nếu nội dung quá dài */
+    width: 700px;
+    /* Kích thước cố định */
+    max-height: 90vh;
+    /* Giới hạn chiều cao */
+    overflow-y: auto;
+    /* Cuộn nếu nội dung quá dài */
     position: relative;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
     display: flex;
@@ -212,7 +216,8 @@
     height: auto;
     border-radius: 10px;
     margin-bottom: 20px;
-    object-fit: contain; /* Đảm bảo ảnh không bị méo */
+    object-fit: contain;
+    /* Đảm bảo ảnh không bị méo */
 }
 
 .modal-name {
@@ -225,13 +230,25 @@
 }
 
 @keyframes fadeInDown {
-    0% { opacity: 0; transform: translateY(-20px); }
-    100% { opacity: 1; transform: translateY(0); }
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Responsive */
@@ -278,7 +295,8 @@
     }
 
     .modal-content {
-        width: 90%; /* Tự động điều chỉnh trên màn hình nhỏ */
+        width: 90%;
+        /* Tự động điều chỉnh trên màn hình nhỏ */
         padding: 20px;
         max-height: 80vh;
     }
