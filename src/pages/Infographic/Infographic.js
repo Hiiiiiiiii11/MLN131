@@ -1,11 +1,12 @@
 import React from "react";
-import { Timeline, Card, Table, Tag } from "antd";
+import { Timeline, Card, Table, Tag, Typography } from "antd";
+
 import {
   BulbOutlined,
   FundProjectionScreenOutlined,
 } from "@ant-design/icons";
 import "./Infographic.css";
-
+const { Title, Paragraph } = Typography;
 const Inforgraphic = () => {
   // Dữ liệu bảng so sánh
   const dataSource = [
@@ -83,52 +84,79 @@ const Inforgraphic = () => {
   ];
 
   return (
-    <div className="infographic-container">
-      {/* Bảng so sánh */}
-      <Card
-        title="So sánh CNXH không tưởng vs CNXH khoa học"
-        className="compare-card"
-      >
-        <Table
-          dataSource={dataSource}
-          columns={columns}
-          pagination={false}
-          bordered
-        />
-      </Card>
+    <div className="infographic-page">
+      <div className="infographic-intro">
+        <Card className="intro-card">
+          <Title level={1}>Infographic: CNXH Không tưởng & CNXH Khoa học</Title>
+          <Paragraph>
+            Chủ nghĩa xã hội (CNXH) đã trải qua nhiều giai đoạn phát triển. Từ những
+            ước mơ lý tưởng của các nhà tư tưởng nhân đạo thời kỳ đầu, đến lý luận
+            khoa học của Karl Marx và Friedrich Engels, CNXH dần trở thành một
+            phong trào xã hội có cơ sở lý luận và phương pháp đấu tranh rõ ràng.
+          </Paragraph>
+        </Card>
+      </div>
+      <div className="infographic-container">
 
-      {/* Timeline */}
-      <Card
-        title="Timeline: từ CNXH không tưởng → CNXH khoa học"
-        className="timeline-card"
-      >
-        <Timeline mode="left">
-          <Timeline.Item label="1516">
-            Utopia (Thomas More): mầm mống tư tưởng bình đẳng
-          </Timeline.Item>
-          <Timeline.Item label="Cuối TK XVIII – đầu XIX">
-            Saint-Simon, Fourier, Owen: mô hình cộng đồng lý tưởng → CNXH không tưởng
-          </Timeline.Item>
-          <Timeline.Item label="1848">
-            Tuyên ngôn của Đảng Cộng sản (Marx & Engels): khai sinh CNXH khoa học
-          </Timeline.Item>
-          <Timeline.Item label="1864–1876">
-            Quốc tế I; 1867 – Tư bản (Quyển I)
-          </Timeline.Item>
-          <Timeline.Item label="1871">
-            Công xã Paris: thực nghiệm chính quyền của người lao động
-          </Timeline.Item>
-          <Timeline.Item label="1889">
-            Quốc tế II; Ngày Quốc tế Lao động 1/5
-          </Timeline.Item>
-          <Timeline.Item label="Thế kỷ XX">
-            Phong trào công nhân toàn cầu; chuẩn mực lao động, nhà nước phúc lợi, cách mạng XHCN ở một số nước
-          </Timeline.Item>
-          <Timeline.Item label="Hiện đại">
-            Phong trào lao động trong bối cảnh số hóa, toàn cầu hoá, kinh tế nền tảng
-          </Timeline.Item>
-        </Timeline>
-      </Card>
+        {/* Bảng so sánh */}
+
+        <Card
+          title="So sánh CNXH không tưởng vs CNXH khoa học"
+          className="compare-card"
+        >
+          <Table
+            dataSource={dataSource}
+            columns={columns}
+            pagination={false}
+            bordered
+          />
+        </Card>
+
+        {/* Timeline */}
+        <Card
+          title="Timeline: từ CNXH không tưởng → CNXH khoa học"
+          className="timeline-card"
+        >
+          <Timeline mode="left">
+            <Timeline.Item label="1516">
+              Utopia (Thomas More): mầm mống tư tưởng bình đẳng
+            </Timeline.Item>
+            <Timeline.Item label="Cuối TK XVIII – đầu XIX">
+              Saint-Simon, Fourier, Owen: mô hình cộng đồng lý tưởng → CNXH không tưởng
+            </Timeline.Item>
+            <Timeline.Item label="1848">
+              Tuyên ngôn của Đảng Cộng sản (Marx & Engels): khai sinh CNXH khoa học
+            </Timeline.Item>
+            <Timeline.Item label="1864–1876">
+              Quốc tế I; 1867 – Tư bản (Quyển I)
+            </Timeline.Item>
+            <Timeline.Item label="1871">
+              Công xã Paris: thực nghiệm chính quyền của người lao động
+            </Timeline.Item>
+            <Timeline.Item label="1889">
+              Quốc tế II; Ngày Quốc tế Lao động 1/5
+            </Timeline.Item>
+            <Timeline.Item label="Thế kỷ XX">
+              Phong trào công nhân toàn cầu; chuẩn mực lao động, nhà nước phúc lợi, cách mạng XHCN ở một số nước
+            </Timeline.Item>
+            <Timeline.Item label="Hiện đại">
+              Phong trào lao động trong bối cảnh số hóa, toàn cầu hoá, kinh tế nền tảng
+            </Timeline.Item>
+          </Timeline>
+        </Card>
+
+      </div>
+      <div className="infographic-conclusion">
+        <Card className="conclusion-card">
+          <Title level={3}>Kết luận</Title>
+          <Paragraph>
+            CNXH không tưởng để lại những giá trị nhân văn và lý tưởng về công bằng,
+            trong khi CNXH khoa học cung cấp cơ sở lý luận, phương pháp và chiến
+            lược để phong trào công nhân có thể hiện thực hóa các mục tiêu đó. Cả
+            hai đều đóng vai trò quan trọng trong tiến trình lịch sử nhân loại.
+          </Paragraph>
+        </Card>
+      </div>
     </div>
   );
 };

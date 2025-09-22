@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { MailOutlined, PhoneOutlined, FacebookOutlined, TwitterOutlined, InstagramOutlined, SearchOutlined } from "@ant-design/icons";
 import { Input, Space } from 'antd';
 import { useNavigate } from "react-router-dom";
@@ -8,6 +8,7 @@ const Navbar = () => {
     const [language, setLanguage] = useState("VI");
     const [selectedMenu, setSelectedMenu] = useState("home"); // default là home
     const navigate = useNavigate();
+    const [isScrolling, setIsScrolling] = useState(false);
 
     const handleLanguageChange = (newLanguage) => {
         setLanguage(newLanguage);
@@ -18,8 +19,25 @@ const Navbar = () => {
         navigate(`/${menu}`);
     };
 
+    useEffect(() => {
+        let scrollTimer;
+
+        const handleScroll = () => {
+            setIsScrolling(true);
+
+            if (scrollTimer) clearTimeout(scrollTimer);
+
+            scrollTimer = setTimeout(() => {
+                setIsScrolling(false);
+            }, 500);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
     return (
-        <div className="navbar-container">
+        <div className={`navbar-container ${isScrolling ? "transparent" : "solid"}`}>
             <div className="top-bar">
                 <div className="logo-section">
                     <h1 className="logo">Triết Học Marx–Lenin</h1>
