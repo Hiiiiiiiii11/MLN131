@@ -2,6 +2,7 @@ import React from "react";
 import { createBrowserRouter } from "react-router";
 import HomePage from "../pages/Home/Homepage";
 import MainLayout from "../components/MainLayout/MainLayout";
+import Infographic from "../pages/Infographic/Infographic";
 
 
 
@@ -12,13 +13,13 @@ export const router = createBrowserRouter([
         element: <MainLayout />,
         children: [
             {
-                path: "/side-bar1", // tương đương với /layout
+                path: "/home", // tương đương với /layout
                 element: <HomePage />,
             },
-            // {
-            //     path: "/side-bar2", // tương đương với /layout
-            //     element: <Connect />,
-            // },
+            {
+                path: "/infographic", // tương đương với /layout
+                element: <Infographic />,
+            },
             // {
             //     path: "/side-bar3", // tương đương với /layout
             //     element: <Develop />,

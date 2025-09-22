@@ -6,7 +6,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './MainLayout.css';
-import Homepage from "../../pages/Home/Homepage";
 
 const MainLayout = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -84,8 +83,9 @@ const MainLayout = () => {
                         </a>
                     ))}
                 </Slider>
-                <Homepage />
+
             </div>
+            {/* Chỉ render nội dung route */}
             <div className={`appHero ${isSidebarOpen ? "collapsed" : ""}`}>
                 <Outlet />
             </div>

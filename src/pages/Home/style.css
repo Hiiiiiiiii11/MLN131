@@ -1,5 +1,5 @@
 .home-container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 20px;
     font-family: 'Roboto', sans-serif;
@@ -8,44 +8,66 @@
 .header-section {
     text-align: center;
     padding: 40px 20px;
-    background: linear-gradient(90deg, #2c3e50, #34495e); /* Gradient nền đậm */
-    color: #ecf0f1; /* Màu chữ sáng */
+    background: linear-gradient(90deg, #2c3e50, #34495e);
+    /* Gradient nền đậm */
+    color: #ecf0f1;
+    /* Màu chữ sáng */
     border-radius: 10px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
     margin-bottom: 40px;
     position: relative;
-    overflow: hidden; /* Ngăn tràn hiệu ứng */
+    overflow: hidden;
+    /* Ngăn tràn hiệu ứng */
 }
 
 .main-title {
     font-size: 36px;
     font-weight: 700;
-    color: #e74c3c; /* Màu đỏ làm điểm nhấn */
+    color: #e74c3c;
+    /* Màu đỏ làm điểm nhấn */
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-shadow: 2px 2px 6px rgba(231, 76, 60, 0.4); /* Hiệu ứng glow */
-    animation: fadeIn 1.5s ease-in-out; /* Hiệu ứng fade khi load */
+    text-shadow: 2px 2px 6px rgba(231, 76, 60, 0.4);
+    /* Hiệu ứng glow */
+    animation: fadeIn 1.5s ease-in-out;
+    /* Hiệu ứng fade khi load */
 }
 
 .subtitle {
     font-size: 20px;
     font-weight: 400;
-    color: #bdc3c7; /* Màu xám nhạt */
+    color: #bdc3c7;
+    /* Màu xám nhạt */
     margin-bottom: 20px;
     line-height: 1.5;
-    animation: slideUp 1.5s ease-in-out; /* Hiệu ứng trượt lên */
+    animation: slideUp 1.5s ease-in-out;
+    /* Hiệu ứng trượt lên */
 }
 
 /* Hiệu ứng animation */
 @keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes slideUp {
-    0% { opacity: 0; transform: translateY(30px); }
-    100% { opacity: 1; transform: translateY(0); }
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Hiệu ứng viền gradient (optional) */
