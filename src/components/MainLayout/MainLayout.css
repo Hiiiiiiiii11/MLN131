@@ -51,8 +51,11 @@
 }
 
 .slider-container {
+    width: 100%;
     max-width: 1200px;
     margin: 20px auto;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 
 .slider-image {
