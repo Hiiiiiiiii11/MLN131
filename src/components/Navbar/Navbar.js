@@ -14,9 +14,19 @@ const Navbar = () => {
         setLanguage(newLanguage);
     };
 
-    const handleMenuClick = (menu) => {
+    const handleMenuClick = (menu, sectionId = null) => {
         setSelectedMenu(menu);
         navigate(`/${menu}`);
+
+        if (sectionId) {
+            // chờ 1 chút để trang load xong
+            setTimeout(() => {
+                const element = document.getElementById(sectionId);
+                if (element) {
+                    element.scrollIntoView({ behavior: "smooth" });
+                }
+            }, 300);
+        }
     };
 
     useEffect(() => {
@@ -69,40 +79,38 @@ const Navbar = () => {
                     />
                 </div> */}
                 <div className="nav-section">
-                    <Space size="large">
-                        <span
-                            className={`nav-item ${selectedMenu === "home" ? "selected" : ""}`}
-                            onClick={() => handleMenuClick("home")}
-                        >
-                            Home
-                        </span>
-                        <span
-                            className={`nav-item ${selectedMenu === "introduction" ? "selected" : ""}`}
-                            onClick={() => handleMenuClick("introduction")}
-                        >
-                            Introduction
-                        </span>
-                            <span
-                            className={`nav-item ${selectedMenu === "news" ? "selected" : ""}`}
-                            onClick={() => handleMenuClick("news")}
-                        >
-                           News & Interactive
-                        </span>
-                        <span
-                            className={`nav-item ${selectedMenu === "infographic" ? "selected" : ""}`}
-                            onClick={() => handleMenuClick("infographic")}
-                        >
-                            Infographic
-                        </span>
-                    
-                        <span
-                            className={`nav-item ${selectedMenu === "blog" ? "selected" : ""}`}
-                            onClick={() => handleMenuClick("blog")}
-                        >
-                            Blog
-                        </span>
+                    <span
+                        className={`nav-item ${selectedMenu === "home" ? "selected" : ""}`}
+                        onClick={() => handleMenuClick("home")}
+                    >
+                        Home
+                    </span>
+                    <span
+                        className={`nav-item ${selectedMenu === "introduction" ? "selected" : ""}`}
+                        onClick={() => handleMenuClick("introduction")}
+                    >
+                        Introduction
+                    </span>
+                    <span
+                        className={`nav-item ${selectedMenu === "news" ? "selected" : ""}`}
+                        onClick={() => handleMenuClick("news", "section1")}
+                    >
+                        News & Interactive
+                    </span>
+                    <span
+                        className={`nav-item ${selectedMenu === "infographic" ? "selected" : ""}`}
+                        onClick={() => handleMenuClick("infographic")}
+                    >
+                        Infographic
+                    </span>
 
-                    </Space>
+                    <span
+                        className={`nav-item ${selectedMenu === "blog" ? "selected" : ""}`}
+                        onClick={() => handleMenuClick("blog")}
+                    >
+                        Blog
+                    </span>
+
                 </div>
                 <div className="language-section">
                     <span

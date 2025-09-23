@@ -21,8 +21,11 @@
 
 .infographic-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(768px, 1fr));
+    /* auto-fit: tự động số cột
+       minmax(300px, 1fr): card nhỏ nhất 300px, lớn nhất full */
     gap: 20px;
+    padding: 30px;
 }
 
 .compare-card,
@@ -45,4 +48,56 @@
 .timeline-card,
 .conclusion-card {
     margin-bottom: 30px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .infographic-container {
+        grid-template-columns: 1fr;
+        /* xuống 1 cột */
+    }
+
+    .infographic-comparison,
+    .infographic-timeline {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+    }
+
+    .compare-card,
+    .timeline-card table {
+        width: 100%;
+        max-width: 950px !important;
+        /* để có thể scroll ngang */
+        border-collapse: collapse;
+        table-layout: auto;
+        /* cho phép cột co theo nội dung */
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .infographic-container {
+        grid-template-columns: 1fr;
+        /* chắc chắn 1 cột */
+        padding: 10px;
+        /* giảm padding cho gọn */
+    }
+
+
+
+
+
+
+
+
+    .ant-card-head-title {
+        font-size: 15px;
+    }
+
+    .infographic-intro div,
+    .infographic-conclusion div {
+        font-size: 16px;
+        /* chữ nhỏ hơn chút */
+    }
 }

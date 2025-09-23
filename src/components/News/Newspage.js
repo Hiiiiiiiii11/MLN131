@@ -4,12 +4,16 @@ import photo11 from '../../assets/photo11.png';
 
 export default function News() {
   return (
+
     <div className="news-container">
       {/* Header Section */}
       <header className="news-header">
-        <div className="header-content">
-          <h1 className="main-title">Chủ nghĩa Xã hội Khoa học</h1>
-          <p className="subtitle">Lịch sử hình thành và ý nghĩa thời đại</p>
+
+        <div className="news-header-content">
+          {/* <section id="section1" className="content-section"> */}
+          <h1 className="news-main-title">CHỦ NGHĨA XÃ HỘI KHOA HỌC</h1>
+          <p className="news-subtitle">LỊCH SỬ HÌNH THÀNH VÀ Ý NGHĨA THỜI ĐẠI</p>
+          {/* </section> */}
         </div>
         <div className="header-decoration"></div>
       </header>
@@ -320,5 +324,6 @@ export default function News() {
         </section>
       </div>
     </div>
+
   )
 }

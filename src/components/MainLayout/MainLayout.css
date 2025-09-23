@@ -1,5 +1,6 @@
 .appContainer {
     min-height: 100vh;
+    width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -376,31 +377,24 @@
 
 /* Responsive */
 @media (max-width: 1024px) {
-    body {
-        min-width: 1024px;
-    }
+    /* body {
+        min-width: 390px;
+    } */
 
     .appContainer {
         width: 100%;
     }
 
-    .navbar,
-    .navbar.extended {
-        right: 0;
-        width: 100%;
-        display: flex;
+    .welcome-message {
+        margin-top: 200px;
+        /* 👈 tăng thêm để tránh bị che */
+        padding-top: 20px;
+        /* giảm padding-top dư thừa */
     }
 
-    .navbar-right {
-        position: fixed;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        right: 20px;
-    }
-
-    .navbar-menu-icon {
-        display: none;
+    .welcome-message a {
+        font-size: 16px;
+        padding: 0px 10px;
     }
 
     .slider-container {
@@ -423,7 +417,6 @@
     }
 
     .game-icon {
-        top: 15px;
         right: 15px;
         width: 50px;
         height: 50px;
