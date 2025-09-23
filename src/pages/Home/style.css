@@ -90,6 +90,7 @@
     opacity: 0;
     transform: scale(0.95);
   }
+
   100% {
     opacity: 1;
     transform: scale(1);
@@ -101,6 +102,7 @@
     opacity: 0;
     transform: translateY(-30px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -112,6 +114,7 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -227,6 +230,7 @@
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -294,7 +298,7 @@
   display: none;
 }
 
-.timeline-period > strong {
+.timeline-period>strong {
   display: block;
   color: #ffd700;
   font-size: 22px;
@@ -313,6 +317,7 @@
 }
 
 .timeline-details li {
+  list-style: none;
   color: #090a0c;
   font-size: 20px;
   line-height: 1.6;
@@ -443,7 +448,7 @@
     font-size: 26px;
   }
 
-  .timeline-period > strong {
+  .timeline-period>strong {
     font-size: 18px;
   }
 }

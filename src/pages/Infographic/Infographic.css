@@ -5,10 +5,74 @@
     font-size: 18px;
 }
 
-.infographic-intro h1 {
-    color: #e74c3c;
-    display: flex;
-    justify-content: center;
+.infographic-decoration h2 {
+    text-align: center;
+    font-size: 3rem;
+    padding: 40px;
+    background: linear-gradient(135deg, #2c3e50, #2980b9);
+    background-size: 400% 400%;
+    border-radius: 15px;
+    color: #fff;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
+    margin: 0 20px;
+
+    /* animation cho background */
+    animation: gradientMove 8s ease infinite;
+}
+
+/* Hiệu ứng gradient động */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Nếu muốn chữ đổi màu động cũng */
+.infographic-decoration h2 span {
+    background: linear-gradient(90deg, #80959b, #ddba59);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textColorShift 6s linear infinite;
+}
+
+@keyframes textColorShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.infographic-decoration {
+    margin-bottom: 30px
+}
+
+.infographic-subtitle::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(45deg, #e74c3c, #3498db);
+    filter: blur(10px);
+    opacity: 0.3;
+    z-index: -1;
+    border-radius: 15px;
 }
 
 .infographic-intro div,
@@ -21,7 +85,7 @@
 
 .infographic-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(768px, 1fr));
+    grid-template-columns: 1fr;
     /* auto-fit: tự động số cột
        minmax(300px, 1fr): card nhỏ nhất 300px, lớn nhất full */
     gap: 20px;
@@ -57,22 +121,7 @@
         /* xuống 1 cột */
     }
 
-    .infographic-comparison,
-    .infographic-timeline {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        width: 100%;
-    }
 
-    .compare-card,
-    .timeline-card table {
-        width: 100%;
-        max-width: 950px !important;
-        /* để có thể scroll ngang */
-        border-collapse: collapse;
-        table-layout: auto;
-        /* cho phép cột co theo nội dung */
-    }
 }
 
 /* Mobile */
@@ -84,10 +133,12 @@
         /* giảm padding cho gọn */
     }
 
-
-
-
-
+    .infographic-comparison,
+    .infographic-timeline {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+    }
 
 
 

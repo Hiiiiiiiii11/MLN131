@@ -91,10 +91,12 @@ const Inforgraphic = () => {
 
   return (
     <div className="infographic-page">
+      <div className="infographic-decoration">
+        <h2 className="infographic-subtitle"><span> CNXH KHÔNG TƯỞNG & CNXH KHOA HỌC</span></h2>
+      </div>
       <div className="infographic-intro">
-        <Card className="intro-card">
-          <Title level={1}>Infographic: CNXH Không tưởng & CNXH Khoa học</Title>
-          <Paragraph>
+        <Card>
+          <Paragraph className="decoration-line">
             Chủ nghĩa xã hội (CNXH) đã trải qua nhiều giai đoạn phát triển. Từ những
             ước mơ lý tưởng của các nhà tư tưởng nhân đạo thời kỳ đầu, đến lý luận
             khoa học của Karl Marx và Friedrich Engels, CNXH dần trở thành một
@@ -102,6 +104,7 @@ const Inforgraphic = () => {
           </Paragraph>
         </Card>
       </div>
+
       <div className="infographic-container">
 
         {/* Bảng so sánh */}
@@ -124,7 +127,6 @@ const Inforgraphic = () => {
           <Card
             title="Timeline: từ CNXH không tưởng → CNXH khoa học"
             className="timeline-card"
-            style={{ minWidth: 1200 }}
           >
             <Timeline mode="left">
               <Timeline.Item label="1516">
