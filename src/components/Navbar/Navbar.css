@@ -1,5 +1,5 @@
 .navbar-container {
-    padding: 10px 50px;
+    padding: 10px 30px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
     position: fixed;
@@ -129,6 +129,7 @@
     transition: all 0.3s ease;
     position: relative;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .nav-item:hover {
@@ -137,7 +138,7 @@
     text-shadow: 0 0 8px rgba(231, 76, 60, 0.4);
 }
 
-.nav-item::after {
+/* .nav-item::after {
     content: '';
     position: absolute;
     width: 0;
@@ -146,7 +147,7 @@
     left: 50%;
     background: #e74c3c;
     transition: all 0.3s ease;
-}
+} */
 
 .nav-item:hover::after {
     width: 100%;
@@ -185,4 +186,58 @@
     font-weight: bold;
     color: #1890ff;
     border-bottom: 2px solid #1890ff;
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        display: none;
+    }
+
+
+    .bottom-bar {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        flex-wrap: wrap;
+        /* 👈 Cho phép xuống dòng */
+        gap: 10px;
+    }
+
+    .nav-section {
+        display: flex;
+        flex-wrap: wrap;
+        /* 👈 Các item trong nav tự xuống dòng */
+        justify-content: center;
+        width: 100%;
+        max-height: 300px;
+    }
+
+    .nav-section .nav-item {
+        flex: 1 1 auto;
+        min-width: 100px;
+        justify-content: left;
+        /* đủ rộng để xuống dòng khi chật */
+        text-align: center;
+        padding: 8px;
+        margin: 2px 0;
+
+        /* 👇 Responsive font size */
+        font-size: clamp(12px, 2vw, 16px);
+    }
+
+    .language-section {
+        margin-top: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+        /* 👈 Nếu cần thì cũng xuống dòng */
+    }
+
+    .language-section span {
+        font-size: clamp(12px, 2vw, 16px);
+    }
+
+    .social-section {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }

@@ -12,46 +12,52 @@ const Inforgraphic = () => {
   const dataSource = [
     {
       key: "1",
-      aspect: "Cơ sở",
+      aspect: "Thời kỳ hình thành",
+      utopian: "Đầu thế kỷ XIX, trong bối cảnh chủ nghĩa tư bản mới phát triển, giai cấp công nhân chưa trưởng thành.",
+      scientific: "Giữa thế kỷ XIX (sau 1848), khi giai cấp công nhân đã hình thành, đấu tranh mạnh mẽ.",
+    },
+    {
+      key: "2",
+      aspect: "Cơ sở lý luận",
       utopian: "Ý chí, đạo đức, mơ ước về xã hội tốt đẹp",
       scientific: "Quy luật lịch sử–xã hội, duy vật lịch sử, đấu tranh giai cấp",
     },
     {
-      key: "2",
+      key: "3",
       aspect: "Phương pháp",
       utopian: "Thiết kế “mô hình lý tưởng”, thuyết phục tầng lớp trên",
       scientific:
         "Phân tích khoa học, tổ chức lực lượng công nhân, cách mạng xã hội",
     },
     {
-      key: "3",
+      key: "4",
       aspect: "Chủ thể",
       utopian: "Các “nhà cải cách” nhân đạo",
       scientific: "Giai cấp công nhân liên minh với các lực lượng lao động khác",
     },
     {
-      key: "4",
+      key: "5",
       aspect: "Mục tiêu",
       utopian: "Công bằng, bác ái, hợp tác",
       scientific:
         "Xóa bỏ áp bức bóc lột, thiết lập CNXH/CSC bằng lực lượng hiện thực",
     },
     {
-      key: "5",
+      key: "6",
       aspect: "Cách đạt được",
       utopian: "Thử nghiệm cộng đồng, kêu gọi lương tri",
       scientific:
         "Tổ chức chính trị, đấu tranh, nắm chính quyền, cải biến QHSX",
     },
     {
-      key: "6",
+      key: "7",
       aspect: "Hạn chế/Ưu điểm",
       utopian: "Nhân văn nhưng thiếu khả thi, thiếu quy luật",
       scientific:
         "Tính khoa học, khả thi lịch sử; vẫn cần vận dụng sáng tạo theo thời đại",
     },
     {
-      key: "7",
+      key: "8",
       aspect: "Di sản",
       utopian: "Gợi ý về công bằng, phúc lợi",
       scientific:
@@ -85,10 +91,12 @@ const Inforgraphic = () => {
 
   return (
     <div className="infographic-page">
+      <div className="infographic-decoration">
+        <h2 className="infographic-subtitle"><span> CNXH KHÔNG TƯỞNG & CNXH KHOA HỌC</span></h2>
+      </div>
       <div className="infographic-intro">
-        <Card className="intro-card">
-          <Title level={1}>Infographic: CNXH Không tưởng & CNXH Khoa học</Title>
-          <Paragraph>
+        <Card>
+          <Paragraph className="decoration-line">
             Chủ nghĩa xã hội (CNXH) đã trải qua nhiều giai đoạn phát triển. Từ những
             ước mơ lý tưởng của các nhà tư tưởng nhân đạo thời kỳ đầu, đến lý luận
             khoa học của Karl Marx và Friedrich Engels, CNXH dần trở thành một
@@ -96,55 +104,58 @@ const Inforgraphic = () => {
           </Paragraph>
         </Card>
       </div>
+
       <div className="infographic-container">
 
         {/* Bảng so sánh */}
-
-        <Card
-          title="So sánh CNXH không tưởng vs CNXH khoa học"
-          className="compare-card"
-        >
-          <Table
-            dataSource={dataSource}
-            columns={columns}
-            pagination={false}
-            bordered
-          />
-        </Card>
-
-        {/* Timeline */}
-        <Card
-          title="Timeline: từ CNXH không tưởng → CNXH khoa học"
-          className="timeline-card"
-        >
-          <Timeline mode="left">
-            <Timeline.Item label="1516">
-              Utopia (Thomas More): mầm mống tư tưởng bình đẳng
-            </Timeline.Item>
-            <Timeline.Item label="Cuối TK XVIII – đầu XIX">
-              Saint-Simon, Fourier, Owen: mô hình cộng đồng lý tưởng → CNXH không tưởng
-            </Timeline.Item>
-            <Timeline.Item label="1848">
-              Tuyên ngôn của Đảng Cộng sản (Marx & Engels): khai sinh CNXH khoa học
-            </Timeline.Item>
-            <Timeline.Item label="1864–1876">
-              Quốc tế I; 1867 – Tư bản (Quyển I)
-            </Timeline.Item>
-            <Timeline.Item label="1871">
-              Công xã Paris: thực nghiệm chính quyền của người lao động
-            </Timeline.Item>
-            <Timeline.Item label="1889">
-              Quốc tế II; Ngày Quốc tế Lao động 1/5
-            </Timeline.Item>
-            <Timeline.Item label="Thế kỷ XX">
-              Phong trào công nhân toàn cầu; chuẩn mực lao động, nhà nước phúc lợi, cách mạng XHCN ở một số nước
-            </Timeline.Item>
-            <Timeline.Item label="Hiện đại">
-              Phong trào lao động trong bối cảnh số hóa, toàn cầu hoá, kinh tế nền tảng
-            </Timeline.Item>
-          </Timeline>
-        </Card>
-
+        <div className="infographic-comparison">
+          <Card
+            title="So sánh CNXH không tưởng vs CNXH khoa học"
+            className="compare-card"
+            style={{ minWidth: 1200 }}
+          >
+            <Table
+              dataSource={dataSource}
+              columns={columns}
+              pagination={false}
+              bordered
+            />
+          </Card>
+        </div>
+        <div className="infographic-timeline">
+          {/* Timeline */}
+          <Card
+            title="Timeline: từ CNXH không tưởng → CNXH khoa học"
+            className="timeline-card"
+          >
+            <Timeline mode="left">
+              <Timeline.Item label="1516">
+                Utopia (Thomas More): mầm mống tư tưởng bình đẳng
+              </Timeline.Item>
+              <Timeline.Item label="Cuối TK XVIII – đầu XIX">
+                Saint-Simon, Fourier, Owen: mô hình cộng đồng lý tưởng → CNXH không tưởng
+              </Timeline.Item>
+              <Timeline.Item label="1848">
+                Tuyên ngôn của Đảng Cộng sản (Marx & Engels): khai sinh CNXH khoa học
+              </Timeline.Item>
+              <Timeline.Item label="1864–1876">
+                Quốc tế I; 1867 – Tư bản (Quyển I)
+              </Timeline.Item>
+              <Timeline.Item label="1871">
+                Công xã Paris: thực nghiệm chính quyền của người lao động
+              </Timeline.Item>
+              <Timeline.Item label="1889">
+                Quốc tế II; Ngày Quốc tế Lao động 1/5
+              </Timeline.Item>
+              <Timeline.Item label="Thế kỷ XX">
+                Phong trào công nhân toàn cầu; chuẩn mực lao động, nhà nước phúc lợi, cách mạng XHCN ở một số nước
+              </Timeline.Item>
+              <Timeline.Item label="Hiện đại">
+                Phong trào lao động trong bối cảnh số hóa, toàn cầu hoá, kinh tế nền tảng
+              </Timeline.Item>
+            </Timeline>
+          </Card>
+        </div>
       </div>
       <div className="infographic-conclusion">
         <Card className="conclusion-card">
