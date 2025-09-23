@@ -1,20 +1,23 @@
 import React from "react";
-import { Timeline, Card, Table, Tag, Typography } from "antd";
-
+import { Timeline, Card, Table, Typography } from "antd";
 import {
   BulbOutlined,
   FundProjectionScreenOutlined,
 } from "@ant-design/icons";
 import "./Infographic.css";
+
 const { Title, Paragraph } = Typography;
+
 const Inforgraphic = () => {
   // Dữ liệu bảng so sánh
   const dataSource = [
     {
       key: "1",
       aspect: "Thời kỳ hình thành",
-      utopian: "Đầu thế kỷ XIX, trong bối cảnh chủ nghĩa tư bản mới phát triển, giai cấp công nhân chưa trưởng thành.",
-      scientific: "Giữa thế kỷ XIX (sau 1848), khi giai cấp công nhân đã hình thành, đấu tranh mạnh mẽ.",
+      utopian:
+        "Đầu thế kỷ XIX, trong bối cảnh chủ nghĩa tư bản mới phát triển, giai cấp công nhân chưa trưởng thành.",
+      scientific:
+        "Giữa thế kỷ XIX (sau 1848), khi giai cấp công nhân đã hình thành, đấu tranh mạnh mẽ.",
     },
     {
       key: "2",
@@ -75,7 +78,7 @@ const Inforgraphic = () => {
       ),
       dataIndex: "utopian",
       key: "utopian",
-      render: (text) => <Tag color="volcano">{text}</Tag>,
+      render: (text) => <div className="table-cell utopian-cell">{text}</div>,
     },
     {
       title: (
@@ -85,34 +88,39 @@ const Inforgraphic = () => {
       ),
       dataIndex: "scientific",
       key: "scientific",
-      render: (text) => <Tag color="blue">{text}</Tag>,
+      render: (text) => (
+        <div className="table-cell scientific-cell">{text}</div>
+      ),
     },
   ];
 
   return (
     <div className="infographic-page">
       <div className="infographic-decoration">
-        <h2 className="infographic-subtitle"><span> CNXH KHÔNG TƯỞNG & CNXH KHOA HỌC</span></h2>
+        <h2 className="infographic-subtitle">
+          <span> CNXH KHÔNG TƯỞNG & CNXH KHOA HỌC</span>
+        </h2>
       </div>
+
       <div className="infographic-intro">
         <Card>
           <Paragraph className="decoration-line">
-            Chủ nghĩa xã hội (CNXH) đã trải qua nhiều giai đoạn phát triển. Từ những
-            ước mơ lý tưởng của các nhà tư tưởng nhân đạo thời kỳ đầu, đến lý luận
-            khoa học của Karl Marx và Friedrich Engels, CNXH dần trở thành một
-            phong trào xã hội có cơ sở lý luận và phương pháp đấu tranh rõ ràng.
+            Chủ nghĩa xã hội (CNXH) đã trải qua nhiều giai đoạn phát triển. Từ
+            những ước mơ lý tưởng của các nhà tư tưởng nhân đạo thời kỳ đầu, đến
+            lý luận khoa học của Karl Marx và Friedrich Engels, CNXH dần trở
+            thành một phong trào xã hội có cơ sở lý luận và phương pháp đấu tranh
+            rõ ràng.
           </Paragraph>
         </Card>
       </div>
 
       <div className="infographic-container">
-
         {/* Bảng so sánh */}
         <div className="infographic-comparison">
           <Card
             title="So sánh CNXH không tưởng vs CNXH khoa học"
             className="compare-card"
-            style={{ minWidth: 1200 }}
+            style={{ minWidth: 750 }}
           >
             <Table
               dataSource={dataSource}
@@ -122,8 +130,9 @@ const Inforgraphic = () => {
             />
           </Card>
         </div>
+
+        {/* Timeline */}
         <div className="infographic-timeline">
-          {/* Timeline */}
           <Card
             title="Timeline: từ CNXH không tưởng → CNXH khoa học"
             className="timeline-card"
@@ -133,10 +142,12 @@ const Inforgraphic = () => {
                 Utopia (Thomas More): mầm mống tư tưởng bình đẳng
               </Timeline.Item>
               <Timeline.Item label="Cuối TK XVIII – đầu XIX">
-                Saint-Simon, Fourier, Owen: mô hình cộng đồng lý tưởng → CNXH không tưởng
+                Saint-Simon, Fourier, Owen: mô hình cộng đồng lý tưởng → CNXH
+                không tưởng
               </Timeline.Item>
               <Timeline.Item label="1848">
-                Tuyên ngôn của Đảng Cộng sản (Marx & Engels): khai sinh CNXH khoa học
+                Tuyên ngôn của Đảng Cộng sản (Marx & Engels): khai sinh CNXH
+                khoa học
               </Timeline.Item>
               <Timeline.Item label="1864–1876">
                 Quốc tế I; 1867 – Tư bản (Quyển I)
@@ -148,23 +159,27 @@ const Inforgraphic = () => {
                 Quốc tế II; Ngày Quốc tế Lao động 1/5
               </Timeline.Item>
               <Timeline.Item label="Thế kỷ XX">
-                Phong trào công nhân toàn cầu; chuẩn mực lao động, nhà nước phúc lợi, cách mạng XHCN ở một số nước
+                Phong trào công nhân toàn cầu; chuẩn mực lao động, nhà nước
+                phúc lợi, cách mạng XHCN ở một số nước
               </Timeline.Item>
               <Timeline.Item label="Hiện đại">
-                Phong trào lao động trong bối cảnh số hóa, toàn cầu hoá, kinh tế nền tảng
+                Phong trào lao động trong bối cảnh số hóa, toàn cầu hoá, kinh tế
+                nền tảng
               </Timeline.Item>
             </Timeline>
           </Card>
         </div>
       </div>
+
       <div className="infographic-conclusion">
         <Card className="conclusion-card">
           <Title level={3}>Kết luận</Title>
           <Paragraph>
-            CNXH không tưởng để lại những giá trị nhân văn và lý tưởng về công bằng,
-            trong khi CNXH khoa học cung cấp cơ sở lý luận, phương pháp và chiến
-            lược để phong trào công nhân có thể hiện thực hóa các mục tiêu đó. Cả
-            hai đều đóng vai trò quan trọng trong tiến trình lịch sử nhân loại.
+            CNXH không tưởng để lại những giá trị nhân văn và lý tưởng về công
+            bằng, trong khi CNXH khoa học cung cấp cơ sở lý luận, phương pháp và
+            chiến lược để phong trào công nhân có thể hiện thực hóa các mục tiêu
+            đó. Cả hai đều đóng vai trò quan trọng trong tiến trình lịch sử nhân
+            loại.
           </Paragraph>
         </Card>
       </div>

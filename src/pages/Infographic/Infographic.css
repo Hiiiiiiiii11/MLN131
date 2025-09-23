@@ -18,8 +18,33 @@
     z-index: 1;
     margin: 0 20px;
 
+
     /* animation cho background */
-    animation: gradientMove 8s ease infinite;
+    animation: gradientMove 5s ease infinite;
+}
+
+/* Style riêng cho cell trong bảng */
+.table-cell {
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.6;
+    word-break: break-word;
+    /* cho text dài xuống dòng */
+    white-space: normal;
+    /* không ép text trên 1 dòng */
+}
+
+.utopian-cell {
+    background: rgba(255, 99, 71, 0.1);
+    color: #dd7530;
+    border: 1px solid #ccae94;
+}
+
+.scientific-cell {
+    background: rgba(52, 152, 219, 0.1);
+    color: #2c3e50;
+    border: 1px solid #3498db;
 }
 
 /* Hiệu ứng gradient động */
@@ -39,7 +64,7 @@
 
 /* Nếu muốn chữ đổi màu động cũng */
 .infographic-decoration h2 span {
-    background: linear-gradient(90deg, #80959b, #ddba59);
+    background: linear-gradient(90deg, #80959b, #e0cccc);
     background-size: 300% 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -136,6 +161,7 @@
     .infographic-comparison,
     .infographic-timeline {
         overflow-x: auto;
+        min-width: 300px !important;
         -webkit-overflow-scrolling: touch;
         width: 100%;
     }
@@ -150,5 +176,29 @@
     .infographic-conclusion div {
         font-size: 16px;
         /* chữ nhỏ hơn chút */
+    }
+}
+
+/* Bảng bình thường chiếm 100% */
+.infographic-comparison table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+    /* bảng luôn rộng ít nhất 700px */
+}
+
+/* Bọc ngoài để khi nhỏ hơn 700px thì bật scroll */
+.infographic-comparison {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    /* mượt trên mobile */
+}
+
+/* Mobile: thu gọn khoảng cách */
+@media (max-width: 768px) {
+    .infographic-comparison {
+        padding-bottom: 10px;
+        /* thêm chút space khi scroll */
     }
 }
