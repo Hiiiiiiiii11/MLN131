@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { MailOutlined, PhoneOutlined, FacebookOutlined, TwitterOutlined, InstagramOutlined, SearchOutlined } from "@ant-design/icons";
+import { MailOutlined, PhoneOutlined, FacebookOutlined, TwitterOutlined, InstagramOutlined, SearchOutlined, YoutubeOutlined } from "@ant-design/icons";
 import { Input, Space } from 'antd';
 import { useNavigate } from "react-router-dom";
 import "./Navbar.css";
@@ -49,8 +49,8 @@ const Navbar = () => {
                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon">
                         <FacebookOutlined style={{ color: "#4267B2", fontSize: "22px" }} />
                     </a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-                        <TwitterOutlined style={{ color: "#1DA1F2", fontSize: "22px" }} />
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+                        <YoutubeOutlined style={{ color: "#ca1616ff", fontSize: "22px" }} />
                     </a>
                     <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon">
                         <InstagramOutlined style={{ color: "#E4405F", fontSize: "22px" }} />
@@ -82,18 +82,19 @@ const Navbar = () => {
                         >
                             Introduction
                         </span>
+                            <span
+                            className={`nav-item ${selectedMenu === "news" ? "selected" : ""}`}
+                            onClick={() => handleMenuClick("news")}
+                        >
+                           News & Interactive
+                        </span>
                         <span
                             className={`nav-item ${selectedMenu === "infographic" ? "selected" : ""}`}
                             onClick={() => handleMenuClick("infographic")}
                         >
                             Infographic
                         </span>
-                        <span
-                            className={`nav-item ${selectedMenu === "interactive" ? "selected" : ""}`}
-                            onClick={() => handleMenuClick("interactive")}
-                        >
-                            Interactive Section
-                        </span>
+                    
                         <span
                             className={`nav-item ${selectedMenu === "blog" ? "selected" : ""}`}
                             onClick={() => handleMenuClick("blog")}

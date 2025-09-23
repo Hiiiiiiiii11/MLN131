@@ -1,248 +1,449 @@
 .home-container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 30px 20px;
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #f5f7fa, #e0e7f0);
-    /* Gradient nền nhẹ nhàng */
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #e0e7f0);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .home-header-section {
-    text-align: center;
-    padding: 50px 30px;
-    background: linear-gradient(90deg, #2c3e50, #3498db);
-    /* Gradient xanh đậm */
-    color: #ecf0f1;
-    border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-    margin-bottom: 50px;
-    position: relative;
-    overflow: hidden;
-    animation: fadeIn 1.8s ease-in-out;
+  text-align: center;
+  padding: 50px 30px;
+  background: linear-gradient(90deg, #2c3e50, #3498db);
+  color: #ecf0f1;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  margin-bottom: 50px;
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 1.8s ease-in-out;
 }
 
 .home-header-section::before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    background: linear-gradient(45deg, #e74c3c, #8e44ad, #2c3e50);
-    z-index: -1;
-    border-radius: 17px;
-    filter: blur(15px);
-    opacity: 0.6;
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(45deg, #e74c3c, #8e44ad, #2c3e50);
+  z-index: -1;
+  border-radius: 17px;
+  filter: blur(15px);
+  opacity: 0.6;
 }
 
 .home-main-title {
-    font-size: 40px;
-    font-weight: 800;
-    color: #e74c3c;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    text-shadow: 3px 3px 8px rgba(231, 76, 60, 0.5);
-    animation: slideDown 1.8s ease-in-out;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  color: #e74c3c;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 3px 3px 8px rgba(231, 76, 60, 0.5);
+  animation: slideDown 1.8s ease-in-out;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .home-subtitle {
-    font-size: 22px;
-    font-weight: 500;
-    color: #bdc3c7;
-    margin-bottom: 20px;
-    line-height: 1.6;
-    animation: slideUp 1.8s ease-in-out;
-    padding: 40px 20px;
-    background: linear-gradient(90deg, #2c3e50, #34495e);
-    /* Gradient nền đậm */
-    color: #ecf0f1;
-    /* Màu chữ sáng */
-    border-radius: 10px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
-    margin-bottom: 40px;
-    position: relative;
-    overflow: hidden;
-    /* Ngăn tràn hiệu ứng */
+  font-size: 22px;
+  font-weight: 500;
+  color: #bdc3c7;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  animation: slideUp 1.8s ease-in-out;
+  padding: 40px 20px;
+  background: linear-gradient(90deg, #2c3e50, #34495e);
+  color: #ecf0f1;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
 }
 
 .main-title {
-    font-size: 36px;
-    font-weight: 700;
-    color: #e74c3c;
-    /* Màu đỏ làm điểm nhấn */
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 6px rgba(231, 76, 60, 0.4);
-    /* Hiệu ứng glow */
-    animation: fadeIn 1.5s ease-in-out;
-    /* Hiệu ứng fade khi load */
+  font-size: 36px;
+  font-weight: 700;
+  color: #e74c3c;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 6px rgba(231, 76, 60, 0.4);
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .subtitle {
-    font-size: 20px;
-    font-weight: 400;
-    color: #bdc3c7;
-    /* Màu xám nhạt */
-    margin-bottom: 20px;
-    line-height: 1.5;
-    animation: slideUp 1.5s ease-in-out;
-    /* Hiệu ứng trượt lên */
+  font-size: 20px;
+  font-weight: 400;
+  color: #bdc3c7;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  animation: slideUp 1.5s ease-in-out;
 }
 
 /* Hiệu ứng animation */
 @keyframes fadeIn {
-
-    0% {
-        opacity: 0;
-        transform: scale(0.95);
-    }
-
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 @keyframes slideDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes slideUp {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .home-content-with-image {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    margin-bottom: 50px;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 50px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .home-content-with-image:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .home-side-image {
-    width: 320px;
-    height: 420px;
-    object-fit: cover;
-    border-radius: 12px;
-    border: 4px solid #fff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    transition: all 0.4s ease;
+  width: 320px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 4px solid #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
 }
 
 .home-side-image:hover {
-    transform: scale(1.06);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  transform: scale(1.06);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
 .home-text-content {
-    flex: 1;
-    padding: 15px;
+  flex: 1;
+  padding: 15px;
 }
 
 .home-text-content h2 {
-    color: #2c3e50;
-    font-size: 26px;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    position: relative;
+  color: #2c3e50;
+  font-size: 26px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
 }
 
 .home-text-content h2::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 50px;
-    height: 3px;
-    background: #e74c3c;
-    transition: width 0.3s ease;
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: #e74c3c;
+  transition: width 0.3s ease;
 }
 
 .home-text-content h2:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 .home-text-content p {
-    font-size: 17px;
-    color: #444;
-    line-height: 1.7;
-    text-align: justify;
+  font-size: 17px;
+  color: #444;
+  line-height: 1.7;
+  text-align: justify;
 }
 
+.home-text-content ul {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.home-text-content li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.home-text-content strong {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+/* Adding beautiful timeline styles for socialist history section */
+.socialist-timeline-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 20px;
+  padding: 40px;
+  margin: 30px 0;
+  box-shadow: 0 15px 35px rgba(102, 126, 234, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.socialist-timeline-section::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.socialist-timeline-section h2 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 2;
+}
+
+.socialist-timeline-section p {
+  color: #f8f9fa;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  text-align: justify;
+  position: relative;
+  z-index: 2;
+}
+
+.timeline-list {
+  position: relative;
+  z-index: 2;
+  padding-left: 0;
+  list-style: none;
+}
+
+.timeline-period {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 60px;
+}
+
+.timeline-period::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: -40px;
+  width: 3px;
+  background: linear-gradient(to bottom, #ffd700, #ff6b6b);
+  border-radius: 2px;
+}
+
+.timeline-period::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 8px;
+  width: 18px;
+  height: 18px;
+  background: linear-gradient(45deg, #ffd700, #ff6b6b);
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 4px rgba(255, 215, 0, 0.3);
+}
+
+.timeline-period:last-child::before {
+  display: none;
+}
+
+.timeline-period > strong {
+  display: block;
+  color: #ffd700;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-details {
+  background: rgba(139, 42, 42, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-details li {
+  color: #090a0c;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.timeline-details li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  color: #ffd700;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.timeline-details li strong {
+  color: #ffd700;
+  font-weight: 600;
+}
+
+/* Hover effects */
+.timeline-period:hover .timeline-details {
+  transform: translateX(10px);
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.timeline-period:hover::after {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0 6px rgba(255, 215, 0, 0.4);
+}
+
+/* Special styling for socialist history section */
+.socialist-history-section {
+  background: linear-gradient(135deg, #fff3e0, #f3e5f5) !important;
+  border: 2px solid #e74c3c;
+  position: relative;
+  overflow: hidden;
+}
+
+.socialist-history-section::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #e74c3c, #8e44ad, #3498db);
+  z-index: -1;
+  border-radius: 17px;
+  filter: blur(8px);
+  opacity: 0.3;
+}
+
+.socialist-history-section .home-text-content h2 {
+  color: #e74c3c;
+  font-size: 28px;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(231, 76, 60, 0.3);
+}
+
+.socialist-history-section .home-text-content h2::after {
+  background: linear-gradient(90deg, #e74c3c, #8e44ad);
+  height: 4px;
+}
+
+/* Responsive design */
 @media (max-width: 1024px) {
-    .home-container {
-        padding: 20px 15px;
-    }
+  .home-container {
+    padding: 20px 15px;
+  }
 
-    .home-header-section {
-        padding: 30px 15px;
-    }
+  .home-header-section {
+    padding: 30px 15px;
+  }
 
-    .home-main-title {
-        font-size: 30px;
-    }
+  .home-main-title {
+    font-size: 30px;
+  }
 
-    .home-subtitle {
-        font-size: 18px;
-    }
+  .home-subtitle {
+    font-size: 18px;
+  }
 
-    .home-content-with-image {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
+  .home-content-with-image {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
 
-    .home-side-image {
-        width: 250px;
-        height: 330px;
-    }
+  .home-side-image {
+    width: 250px;
+    height: 330px;
+  }
 
-    .home-text-content h2 {
-        font-size: 22px;
-    }
+  .home-text-content h2 {
+    font-size: 22px;
+  }
 
-    .home-text-content p {
-        font-size: 15px;
-    }
+  .home-text-content p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .socialist-timeline-section {
+    padding: 25px 20px;
+  }
+
+  .timeline-period {
+    padding-left: 40px;
+  }
+
+  .timeline-period::before {
+    left: 15px;
+  }
+
+  .timeline-period::after {
+    left: 8px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .socialist-timeline-section h2 {
+    font-size: 26px;
+  }
+
+  .timeline-period > strong {
+    font-size: 18px;
+  }
 }
