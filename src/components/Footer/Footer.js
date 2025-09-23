@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Space } from 'antd';
-import { FacebookOutlined, TwitterOutlined, InstagramOutlined } from "@ant-design/icons";
+import { FacebookOutlined, YoutubeOutlined, InstagramOutlined } from "@ant-design/icons";
 import './Footer.css';
 
 const Footer = () => {
@@ -24,8 +24,8 @@ const Footer = () => {
                         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon">
                             <FacebookOutlined style={{ color: "#4267B2", fontSize: "22px" }} />
                         </a>
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-                            <TwitterOutlined style={{ color: "#1DA1F2", fontSize: "22px" }} />
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+                            <YoutubeOutlined style={{ color: "#ac182bff", fontSize: "22px" }} />
                         </a>
                         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon">
                             <InstagramOutlined style={{ color: "#E4405F", fontSize: "22px" }} />
@@ -35,7 +35,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footer-bottom">
-                <p>&copy; {new Date().getFullYear()} MLN131. All rights reserved.</p>
+                <p>&copy; {new Date().getFullYear()} MLN131.  “Vô sản toàn thế giới, liên hiệp lại!”</p>
             </div>
         </footer>
     );
