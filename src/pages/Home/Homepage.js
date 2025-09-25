@@ -26,7 +26,7 @@ const Home = () => {
           <p>
             (phiên âm tiếng Việt: Các Mác; 5 tháng 5 năm 1818 – 14 tháng 3 năm 1883) là một nhà triết học, kinh tế học,
             sử học, xã hội học, lý luận chính trị, nhà báo và nhà cách mạng người Đức. Tên tuổi của Marx gắn liền với
-            hai danh tác nổi bật, đó là cuốn pamfêlê <em>Tuyên ngôn của Đảng Cộng sản</em> (1848) và bốn tập sách{" "}
+            hai danh tác nổi bật, đó là cuốn pamfơlê <em>Tuyên ngôn của Đảng Cộng sản</em> (1848) và bốn tập sách{" "}
             <em>Das Kapital</em>. Những tư tưởng chính trị và triết học của Marx đã có tầm ảnh hưởng lớn lao đến lịch sử
             của các lĩnh vực tri thức, kinh tế và chính trị mãi tận về sau.
           </p>
@@ -52,15 +52,14 @@ const Home = () => {
 
       <div className="home-content-with-image">
         <img
-          src="https://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2008/10/15/karlmarx_460x276.jpg"
-          alt="Mark Skousen"
+          src="https://tulieuvankien.dangcongsan.vn/Uploads/2018/5/5/2/lenin-lenin.jpg"
+          alt="Lenin"
           className="home-side-image"
         />
         <div className="home-text-content">
-          <h2>Mark Skousen</h2>
+          <h2>Lenin</h2>
           <p>
-            Mark Skousen (2007). "Karl Marx Leads a Revolt Against Capitalism", in M. Skousen, The Big Three in
-            Economics: Adam Smith, Karl Marx, And John Maynard Keynes (New York: M.E.Sharpe), pp. 64-104 (Ch. 3).
+            Vơlađimia Ilich Lênin (Vladimir Ilyich Lenin) là một lãnh tụ của phong trào cách mạng vô sản Nga, là người phát triển học thuyết của Các Mác và Phriđơrich Ăngghen. Ông là người sáng lập ra Quốc tế Cộng sản; đồng thời lãnh đạo nhân dân Nga tiến hành Cách mạng tháng Mười Nga, thành lập ra Nhà nước công nông đầu tiên trên thế giới do Đảng của giai cấp vô sản lãnh đạo (7/11/1917). Ông là trong 100 người có ảnh hưởng nhất đến toàn thế giới.
           </p>
         </div>
       </div>
