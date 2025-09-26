@@ -193,7 +193,7 @@ export default function InteractiveWorldMapEnhanced() {
               width: "4px",
               background: "linear-gradient(to bottom, #667eea, #764ba2)",
               borderRadius: "2px",
-              zIndex: 1,
+              zIndex: 0,
             }}
           />
 
