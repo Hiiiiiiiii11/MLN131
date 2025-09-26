@@ -13,7 +13,11 @@ import photo3 from '../../assets/photo3.png';
 import photo4 from '../../assets/photo4.png';
 import photo5 from '../../assets/photo5.png';
 
-import Minigamepage from "../Minigame/Minigamepage"; // Import component Minigamepage
+import enTranslations from "../../translations/en.json";
+import viTranslations from "../../translations/vn.json";
+import { LANGUAGES } from "../../utils/constant";
+import Minigamepage from "../Minigame/Minigamepage";
+import { useSelector } from "react-redux"; // Import component Minigamepage
 
 
 
@@ -24,6 +28,11 @@ const MainLayout = () => {
     const [isGamePopupOpen, setIsGamePopupOpen] = useState(false); // State cho popup
     const navigate = useNavigate();
     const location = useLocation();
+    const language = useSelector((state) => state.language);
+
+    // ✅ lấy labels theo ngôn ngữ
+    const labels =
+        language === LANGUAGES.EN ? enTranslations.mainlayout : viTranslations.mainlayout;
 
     const toggleSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen);
@@ -81,9 +90,7 @@ const MainLayout = () => {
             <Navbar toggleSidebar={toggleSidebar} />
             <div className="welcome-message">
                 <a href="#">
-                    🌍 Chào mừng bạn đến với website lịch sử – nơi khám phá hành trình từ Chủ nghĩa Xã hội Không Tưởng
-                    đến Chủ nghĩa Xã hội Khoa Học ✨.
-                    Cùng tìm hiểu những tư tưởng, con người và bước ngoặt đã làm thay đổi tiến trình nhân loại!
+                    {labels.welcome}
                 </a>
             </div>
             <div className="slider-container">
