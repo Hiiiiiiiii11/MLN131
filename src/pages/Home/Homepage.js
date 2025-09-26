@@ -1,20 +1,29 @@
-import "./style.css" // Đổi tên file CSS để tránh xung đột
-import InteractiveWorldMap from "../../components/Map/interactive-world-map" // Import interactive world map component
+import React from "react";
+import { useSelector } from "react-redux";
+
+import enTranslations from "../../translations/en.json";
+import viTranslations from "../../translations/vn.json";
+import { LANGUAGES } from "../../utils/constant";
+
+import "./style.css";
+import InteractiveWorldMap from "../../components/Map/interactive-world-map";
 
 const Home = () => {
-  const scrollToComparison = () => {
-    const comparisonSection = document.getElementById("comparison-section")
-    if (comparisonSection) {
-      comparisonSection.scrollIntoView({ behavior: "smooth" })
-    }
-  }
+  const language = useSelector((state) => state.language);
+
+  // ✅ lấy labels theo ngôn ngữ
+  const labels =
+    language === LANGUAGES.EN ? enTranslations.home : viTranslations.home;
 
   return (
     <div className="home-container">
+      {/* Header */}
       <div className="home-header-section">
-        <h1 className="home-main-title">Chủ Nghĩa Xã Hội Khoa Học và Chủ Nghĩa Xã Hội Không Tưởng</h1>
-        <p className="home-subtitle">Khám phá lịch sử và triết học của hai hệ tư tưởng lớn</p>
+        <h1 className="home-main-title">{labels.mainTitle}</h1>
+        <p className="home-subtitle">{labels.subtitle}</p>
       </div>
+
+      {/* Karl Marx */}
       <div className="home-content-with-image">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Karl_Marx_001.jpg/330px-Karl_Marx_001.jpg"
@@ -22,17 +31,12 @@ const Home = () => {
           className="home-side-image"
         />
         <div className="home-text-content">
-          <h2>Karl Heinrich Marx</h2>
-          <p>
-            (phiên âm tiếng Việt: Các Mác; 5 tháng 5 năm 1818 – 14 tháng 3 năm 1883) là một nhà triết học, kinh tế học,
-            sử học, xã hội học, lý luận chính trị, nhà báo và nhà cách mạng người Đức. Tên tuổi của Marx gắn liền với
-            hai danh tác nổi bật, đó là cuốn pamfơlê <em>Tuyên ngôn của Đảng Cộng sản</em> (1848) và bốn tập sách{" "}
-            <em>Das Kapital</em>. Những tư tưởng chính trị và triết học của Marx đã có tầm ảnh hưởng lớn lao đến lịch sử
-            của các lĩnh vực tri thức, kinh tế và chính trị mãi tận về sau.
-          </p>
+          <h2>{labels.marxTitle}</h2>
+          <p>{labels.marxContent}</p>
         </div>
       </div>
 
+      {/* Engels */}
       <div className="home-content-with-image">
         <img
           src="https://images.hcmcpv.org.vn/res/news/2021/11/28-11-2021-friedrich-engels-lanh-tu-vi-dai-cua-giai-cap-cong-nhan-va-nhung-nguoi-cong-san-511B6A81.jpg"
@@ -40,16 +44,12 @@ const Home = () => {
           className="home-side-image"
         />
         <div className="home-text-content">
-          <h2>Friedrich Engels</h2>
-          <p>
-            Sinh ngày 28 tháng 11 năm 1820, ở thành phố Barmen, tỉnh Rhein, Vương quốc Phổ (Nước Đức hiện nay) trong một
-            gia đình chủ xưởng dệt. Để rồi sau đó, trở thành một trong những nhà hoạt động cách mạng lỗi lạc nhất trong
-            lịch sử xã hội loài người. Cùng với Karl Marx, ông mãi mãi đi vào lịch sử nhân loại như những người sáng lập
-            ra chủ nghĩa cộng sản khoa học có tác động to lớn và sâu rộng đối với nhân loại tiến bộ.
-          </p>
+          <h2>{labels.engelsTitle}</h2>
+          <p>{labels.engelsContent}</p>
         </div>
       </div>
 
+      {/* Lenin */}
       <div className="home-content-with-image">
         <img
           src="https://tulieuvankien.dangcongsan.vn/Uploads/2018/5/5/2/lenin-lenin.jpg"
@@ -57,56 +57,66 @@ const Home = () => {
           className="home-side-image"
         />
         <div className="home-text-content">
-          <h2>Lenin</h2>
-          <p>
-            Vơlađimia Ilich Lênin (Vladimir Ilyich Lenin) là một lãnh tụ của phong trào cách mạng vô sản Nga, là người phát triển học thuyết của Các Mác và Phriđơrich Ăngghen. Ông là người sáng lập ra Quốc tế Cộng sản; đồng thời lãnh đạo nhân dân Nga tiến hành Cách mạng tháng Mười Nga, thành lập ra Nhà nước công nông đầu tiên trên thế giới do Đảng của giai cấp vô sản lãnh đạo (7/11/1917). Ông là trong 100 người có ảnh hưởng nhất đến toàn thế giới.
-          </p>
+          <h2>{labels.leninTitle}</h2>
+          <p>{labels.leninContent}</p>
         </div>
       </div>
 
+      {/* Section 1 */}
       <div className="home-text-content">
-        <h2>1. Tư tưởng XHCN trong lịch sử nhân loại</h2>
-        <p>
-          Trước Mác và Ăng-ghen, nhiều nhà tư tưởng đã vẽ ra viễn cảnh xã hội công bằng, không còn áp bức. Tuy nhiên,
-          các học thuyết này thiên về lý tưởng đạo đức, thiếu cơ sở khoa học nên chỉ dừng lại ở mức "không tưởng", đã có
-          nhiều tư tưởng xã hội chủ nghĩa hình thành qua các thời kỳ:
-        </p>
+        <h2>{labels.section1Title}</h2>
+        <p>{labels.section1Content}</p>
+
         <ul className="timeline-list">
           <li className="timeline-period">
-            <strong>Thời cổ đại:</strong>
+            <strong>{labels.timeline.ancient.title}:</strong>
             <ul className="timeline-details">
-              <li>Plato với Cộng hòa – mô tả xã hội lý tưởng, phân chia giai cấp theo tài năng.</li>
+              {labels.timeline.ancient.items.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
             </ul>
           </li>
+
           <li className="timeline-period">
-            <strong>Thời cận đại:</strong>
+            <strong>{labels.timeline.modern.title}:</strong>
             <ul className="timeline-details">
-              <li>Thomas More (Utopia, 1516) – xã hội không tư hữu, mọi người bình đẳng.</li>
-              <li>Tommaso Campanella (Thành phố Mặt Trời) – mô hình cộng đồng lý tưởng.</li>
+              {labels.timeline.modern.items.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
             </ul>
           </li>
+
           <li className="timeline-period">
-            <strong>Thế kỷ 18–19 (CNXH không tưởng):</strong>
+            <strong>{labels.timeline["18_19"].title}:</strong>
             <ul className="timeline-details">
-              <li>Henri de Saint-Simon – nhấn mạnh vai trò khoa học, kỹ sư, nhà công nghiệp.</li>
-              <li>Charles Fourier – cộng đồng "phalanstère" sống chung, chia sẻ.</li>
-              <li>Robert Owen – cải cách xã hội qua các khu công nghiệp kiểu mẫu.</li>
+              {labels.timeline["18_19"].items.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
             </ul>
           </li>
         </ul>
       </div>
 
-      <div className="home-content-with-image socialist-history-section" style={{ order: -1 }}>
+      {/* Map */}
+      <div
+        className="home-content-with-image socialist-history-section"
+        style={{ order: -1 }}
+      >
         <div
           className="home-side-image"
-          style={{ width: "100%", height: "auto", padding: "20px", backgroundColor: "#f8f9fa", borderRadius: "12px" }}
+          style={{
+            width: "100%",
+            height: "auto",
+            padding: "20px",
+            backgroundColor: "#f8f9fa",
+            borderRadius: "12px",
+          }}
         >
           <InteractiveWorldMap />
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
-
+export default Home;

@@ -1,25 +1,32 @@
-import React from "react";
-
-import { Space } from 'antd';
-import { FacebookOutlined, YoutubeOutlined, InstagramOutlined } from "@ant-design/icons";
-import './Footer.css';
+import React from "react"
+import { useSelector } from "react-redux"
+import { FacebookOutlined, YoutubeOutlined, InstagramOutlined } from "@ant-design/icons"
+import enTranslations from "../../translations/en.json"
+import viTranslations from "../../translations/vn.json"
+import { LANGUAGES } from "../../utils/constant"
+import './Footer.css'
 
 const Footer = () => {
+    const language = useSelector((state) => state.language)
+    const t = language === LANGUAGES.EN ? enTranslations.footer : viTranslations.footer
+
     return (
         <footer className="footer">
             <div className="footer-content">
                 <div className="footer-section">
-                    <h3>Triết Học Marx–Lenin</h3>
-                    <p>MLN131 - Nền tảng học thuật và nghiên cứu triết học Marx-Lenin.</p>
+                    <h3>{t.title}</h3>
+                    <p>{t.description}</p>
                 </div>
+
                 <div className="footer-section">
-                    <h3>Liên hệ</h3>
-                    <p>Email: info@mln131.com</p>
-                    <p>Điện thoại: 090 123 4567</p>
-                    <p>Địa chỉ: hẽm 32 Võ Văn Hát Phường Long Trường TP Thủ Đức TP Hồ Chí Minh</p>
+                    <h3>{t.contact.title}</h3>
+                    <p>{t.contact.email}</p>
+                    <p>{t.contact.phone}</p>
+                    <p>{t.contact.address}</p>
                 </div>
+
                 <div className="footer-section">
-                    <h3>Theo dõi chúng tôi</h3>
+                    <h3>{t.followUs}</h3>
                     <div className="social-section">
                         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon">
                             <FacebookOutlined style={{ color: "#4267B2", fontSize: "22px" }} />
@@ -30,15 +37,15 @@ const Footer = () => {
                         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon">
                             <InstagramOutlined style={{ color: "#E4405F", fontSize: "22px" }} />
                         </a>
-
                     </div>
                 </div>
             </div>
+
             <div className="footer-bottom">
-                <p>&copy; {new Date().getFullYear()} MLN131.  “Vô sản toàn thế giới, liên hiệp lại!”</p>
+                <p>&copy; {new Date().getFullYear()} MLN131. {t.slogan}</p>
             </div>
         </footer>
-    );
-};
+    )
+}
 
-export default Footer;
+export default Footer

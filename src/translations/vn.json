@@ -1,76 +1,706 @@
 {
-    "sidebar": {
-        "side-bar1": "Giới thiệu",
-        "side-bar2": "Nguyên lý về mối liên hệ",
-        "side-bar3": "Nguyên lý về sự phát triển",
-        "side-bar4": "Tài liệu tham khảo"
+    "mainlayout": {
+        "welcome": "🌍 Chào mừng bạn đến với website lịch sử – nơi khám phá hành trình từ Chủ nghĩa Xã hội Không Tưởng đến Chủ nghĩa Xã hội Khoa Học ✨.Cùng tìm hiểu những tư tưởng, con người và bước ngoặt đã làm thay đổi tiến trình nhân loại!"
     },
-    "homecontent": {
-        "title": "Nguyên lý của phép biện chứng duy vật",
-        "concept": "Khái niệm : ",
-        "concept-content": "Phép biện chứng duy vật là phương pháp luận cơ bản trong triết học Mác - Lênin, nhằm giúp con người hiểu rõ bản chất và quy luật phát triển của thế giới vật chất và ý thức.",
-        "target": "Mục tiêu :",
-        "target-content": "Trình bày nội dung của phép biện chứng duy vật và phân tích hai nguyên lý chính, từ đó thấy được ứng dụng của chúng trong thực tiễn.",
-        "title2": " Hai nguyên lý của phép biện chứng duy vật",
-        "principle1": "Nguyên lý về mối liên hệ phổ biến",
-        "principle1-content1": "Chính là sự tác động qua lại, sự ràng buộc, sự ảnh hưởng lẫn nhau giữa những sự vật, hiện tượng riêng lẻ đó. Nó giống như những sợi dây vô hình kết nối mọi thứ lại với nhau.",
-        "principle2": "Nguyên lý về sự phát triển",
-        "principle1-content2": "Sự phát triển là quá trình vận động đi lên, từ thấp đến cao, từ đơn giản đến phức tạp, từ kém hoàn thiện đến hoàn thiện hơn",
-        "home-content": "Nhìn tấm hình này, bạn thấy gì ?",
-        "connectprinciple": "Tính chất của các mối liên hệ",
-        "connect-titleadd1": "Nguyên lý về mối liên hệ phổ biến",
-        "connect-titleadd1-content1": "Liên hệ : ",
-        "connect-titleadd1-sub-content1": "Là sự tác động qua lại, sự ràng buộc, sự ảnh hưởng lẫn nhau giữa những sự vật, hiện tượng riêng lẻ đó. Nó giống như những sợi dây vô hình kết nối mọi thứ lại với nhau.",
-        "connect-titleadd1-content2": "Mối liên hệ phổ biến : ",
-        "connect-titleadd1-sub-content2": "Chỉ ra rằng sự liên hệ, sự tác động qua lại không chỉ xảy ra ở một vài chỗ, một vài lĩnh vực mà nó là một đặc tính vốn có, tồn tại ở khắp mọi nơi, trong mọi sự vật, hiện tượng, trong mọi lĩnh vực của thế giới",
-        "connect-title1": "Tính khách quan",
-        "connect-content1": "Các mối liên hệ tồn tại một cách độc lập với ý thức của con người. Chúng không phải do ai đó nghĩ ra hay áp đặt mà là bản chất vốn có của sự vật, hiện tượng.",
-        "connect-title2": "Tính phổ biến",
-        "connect-content2": "Mối liên hệ tồn tại ở mọi nơi, trong mọi lĩnh vực của tự nhiên, xã hội và tư duy. Không có sự vật, hiện tượng nào hoàn toàn cô lập.",
-        "connect-title3": " Tính đa dạng và phong phú",
-        "connect-content3": "Các mối liên hệ không đơn điệu mà biểu hiện dưới vô vàn hình thức khác nhau, tùy thuộc vào bản chất, vai trò và cách thức tác động của các sự vật, hiện tượng.",
-        "connect-titleadd2": "Ý nghĩa mối liên hệ phổ biến",
-        "connect-titleadd2-content1": "Xem xét sự vật, hiện tượng trong tổng thể các mối liên hệ.",
-        "connect-titleadd2-content2": "Tránh phiến diện, cô lập, hoặc tuyệt đối hóa một yếu tố riêng lẻ.",
-        "connect-titleadd2-content3": "Phân tích đúng tính chất, vị trí, vai trò của các mối liên hệ để nhận thức và giải quyết vấn đề hiệu quả.",
-        "connect-subcontent1": "Mối liên hệ phổ biến trực tiếp và gián tiếp",
-        "connect-subcontent2": "Mối liên hệ phổ biến bản chất và hiện tượng",
-        "connect-subcontent3": "Mối liên hệ phổ biến chủ yếu và thứ yếu",
-        "connect-subcontent4": "Mối liên hệ phổ biến tất nhiên và ngẫu nhiên",
-        "developprinciple": "Nguyên lý về sự phát triển",
-        "develop-content1": "Sự phát triển là quá trình vận động từ thấp đến cao, từ đơn giản đến phức tạp",
-        "develop-content2": "Sự phát triển không chỉ là tăng trưởng số lượng mà còn là thay đổi chất lượng",
-        "develop-content3": "“Sự phát triển là quá trình vận động đi lên, từ thấp đến cao, từ đơn giản đến phức tạp, từ kém hoàn thiện đến hoàn thiện hơn” (Giáo trình Triết học Mác - Lênin, 2019, tr.104).",
-        "develop-title1": "Nội dung của nguyên lý về sự phát triển",
-        "develop-sub-content1": "Mọi sự vật, hiện tượng trong thế giới đều không ngừng vận động và phát triển",
-        "develop-sub-content2": "Nguồn gốc của sự phát triển nằm ở mâu thuẫn bên trong của sự vật",
-        "develop-sub-content3": "Sự phát triển diễn ra theo quy luật",
-        "develop-sub-content4": "“Nguồn gốc của sự phát triển là mâu thuẫn, tức là sự đấu tranh giữa các mặt đối lập trong nội tại của sự vật, hiện tượng” (Giáo trình Triết học Mác - Lênin, 2019, tr.105).",
-        "develop-title2": "Các khía cạnh của nguyên lý về sự phát triển",
-        "develop-title2-sub-content1": "Mâu thuẫn là động lực : ",
-        "develop-title2-sub-sub-content1": "Sự đấu tranh giữa các mặt đối lập trong sự vật thúc đẩy phát triển..",
-        "develop-title2-sub-content2": "Lượng dẫn đến chất : ",
-        "develop-title2-sub-sub-content2": "Thay đổi về lượng đến ngưỡng sẽ tạo nhảy vọt về chất.",
-        "develop-title2-sub-content3": "Phát triển không tuyến tính : ",
-        "develop-title2-sub-sub-content3": "Có thể thụt lùi tạm thời, nhưng xu hướng chung là tiến bộ. ",
-        "develop-title3": "Ý nghĩa của nguyên lý về sự phát triển",
-        "develop-title3-sub-content1": "Trong nhận thức : ",
-        "develop-title3-sub-sub-content1": "Hiểu sự vật trong sự vận động , không cố định.",
-        "develop-title3-sub-content2": "Trong thực tiễn : ",
-        "develop-title3-sub-sub-content2": "Khuyễn khích đổi mới, giải quyết mâu thuẫn để tiến bộ.",
-        "develop-title4": "Kết luận",
-        "develop-title4-sub-content1": "Nguyên lý về sự phát triển giải thích bản chất vận động, tiến bộ của thế giới.",
-        "develop-title4-sub-content2": "Giúp định hướng tư duy động và hành động sáng tạo.",
-        "develop-title4-sub-content3": "Kêu gọi: Hãy nhận diện mâu thuẫn và thúc đẩy sự phát triển trong cuộc sống!",
-        "develop-titleadd": "Tính chất của sự phát triển ",
-        "develop-titleadd-content1": "Tính khách quan",
-        "develop-titleadd-sub-content1": "Nguồn gốc của sự phát triển nằm ngay trong bản thân sự vật.",
-        "develop-titleadd-content2": "Tính phổ biến",
-        "develop-titleadd-sub-content2": "Quá trình phát triển diễn ra ở bất kỳ sự vật hiện tượng nào, ở bất kỳ lĩnh vực nào.",
-        "develop-titleadd-content3": "Tính kế thừa",
-        "develop-titleadd-sub-content3": "Sự phát triển tạo ra cái mới, kế thừa sẽ giữ lại những cái hợp lý, cải tạo những yếu tố còn tác dụng, đồng thời gạt bỏ những mặt tiêu cực, lạc hậu..",
-        "develop-titleadd-content4": "Tính phong phú, đa dạng",
-        "develop-titleadd-sub-content4": "Mỗi sự vật hiện tượng có quá trình phát triển không giống nhau. Không phải lúc nào cũng diễn ra theo đường thẳng mà rất quanh co, phức tạp.",
-        "develop-titleadd2": "Ví dụ thực tế"
+    "header": {
+        "title": "Triết học Marxism–Leninism"
+    },
+    "navbar": {
+        "home": "Trang chủ",
+        "introduction": "Giới thiệu",
+        "news": "Tin tức & Tương tác",
+        "infographic": "Infographic",
+        "blog": "Bài viết"
+    },
+    "home": {
+        "mainTitle": "Chủ Nghĩa Xã Hội Khoa Học và Chủ Nghĩa Xã Hội Không Tưởng",
+        "subtitle": "Khám phá lịch sử và triết học của hai hệ tư tưởng lớn",
+        "marxTitle": "Karl Heinrich Marx",
+        "marxContent": "(phiên âm tiếng Việt: Các Mác; 5/5/1818 – 14/3/1883) là một nhà triết học, kinh tế học, sử học, xã hội học, lý luận chính trị, nhà báo và nhà cách mạng người Đức. Tên tuổi của Marx gắn liền với cuốn Tuyên ngôn của Đảng Cộng sản (1848) và bộ Das Kapital. Tư tưởng của ông ảnh hưởng sâu rộng đến tri thức, kinh tế và chính trị hiện đại.",
+        "engelsTitle": "Friedrich Engels",
+        "engelsContent": "Sinh ngày 28/11/1820 ở Barmen, Vương quốc Phổ, Engels trở thành một trong những nhà cách mạng lỗi lạc nhất. Cùng với Karl Marx, ông sáng lập Chủ nghĩa Cộng sản khoa học, để lại ảnh hưởng to lớn cho phong trào công nhân quốc tế.",
+        "leninTitle": "Lenin",
+        "leninContent": "Vladimir Ilyich Lenin là lãnh tụ phong trào cách mạng Nga, phát triển học thuyết của Marx và Engels. Ông sáng lập Quốc tế Cộng sản, lãnh đạo Cách mạng Tháng Mười 1917 và thành lập Nhà nước công nông đầu tiên trên thế giới.",
+        "section1Title": "1. Tư tưởng XHCN trong lịch sử nhân loại",
+        "section1Content": "Trước Mác và Ăng-ghen, nhiều nhà tư tưởng đã vẽ ra xã hội công bằng, không còn áp bức. Tuy nhiên, những học thuyết này thường thiếu cơ sở khoa học, mang tính 'không tưởng'.",
+        "timeline": {
+            "ancient": {
+                "title": "Thời cổ đại",
+                "items": [
+                    "Plato với 'Cộng hòa' – xã hội lý tưởng, phân chia giai cấp theo tài năng."
+                ]
+            },
+            "modern": {
+                "title": "Thời cận đại",
+                "items": [
+                    "Thomas More (Utopia, 1516) – xã hội không tư hữu, mọi người bình đẳng.",
+                    "Tommaso Campanella (Thành phố Mặt Trời) – mô hình cộng đồng lý tưởng."
+                ]
+            },
+            "18_19": {
+                "title": "Thế kỷ 18–19 (CNXH không tưởng)",
+                "items": [
+                    "Henri de Saint-Simon – nhấn mạnh vai trò của khoa học, kỹ sư, nhà công nghiệp.",
+                    "Charles Fourier – cộng đồng 'phalanstère' sống chung, chia sẻ.",
+                    "Robert Owen – cải cách xã hội qua các khu công nghiệp kiểu mẫu."
+                ]
+            }
+        }
+    },
+    "introduction": {
+        "subtitle": "1. Hai hướng tiếp cận khác nhau của chủ nghĩa xã hội",
+        "paragraph1": "Chủ nghĩa xã hội không tưởng xuất hiện từ đầu thế kỷ XIX, do các nhà tư tưởng như Saint-Simon, Fourier, Owen khởi xướng. Nó dựa trên lý tưởng đạo đức và khát vọng công bằng, nhưng thiếu cơ sở khoa học và thực tiễn cách mạng.",
+        "paragraph2": "Chủ nghĩa xã hội khoa học, do Karl Marx và Friedrich Engels xây dựng vào giữa thế kỷ XIX, dựa trên phân tích khoa học về xã hội và quy luật phát triển lịch sử, trở thành nền tảng cho phong trào công nhân hiện đại.",
+        "diffTitle": "Khác biệt cơ bản:",
+        "diff1": "Không tưởng: Dựa vào đạo đức, lòng nhân ái → thiếu tính khả thi.",
+        "diff2": "Khoa học: Dựa trên chủ nghĩa duy vật lịch sử, phân tích quy luật phát triển xã hội → khả thi và gắn với thực tiễn.",
+        "roleTitle": "Vai trò",
+        "roleText": "CNXHKH cung cấp phương pháp, lý luận và chiến lược cách mạng cho phong trào công nhân.",
+        "captionUtopian": "CNXH Không tưởng – Lý tưởng, đạo đức, thiếu cơ sở khoa học",
+        "captionScientific": "CNXHKH – Cơ sở khoa học, gắn với phong trào công nhân"
+    },
+    "news": {
+        "header": {
+            "title": "CHỦ NGHĨA XÃ HỘI KHOA HỌC",
+            "subtitle": "LỊCH SỬ HÌNH THÀNH VÀ Ý NGHĨA THỜI ĐẠI"
+        },
+        "sections": {
+            "section1": {
+                "number": "01",
+                "title": "Tuyên ngôn của Đảng Cộng sản (1848)",
+                "intro": "Tác phẩm kinh điển của Mác & Ăng-ghen, lần đầu tiên trình bày toàn diện hệ thống lý luận của CNXHKH, trở thành cương lĩnh đấu tranh của phong trào công nhân quốc tế.",
+                "mainTitle": "Nội dung chính",
+                "mainPoints": [
+                    "Lịch sử xã hội loài người là lịch sử đấu tranh giai cấp.",
+                    "Giai cấp công nhân là lực lượng cách mạng xóa bỏ chủ nghĩa tư bản.",
+                    "Mục tiêu cuối cùng: xây dựng xã hội cộng sản chủ nghĩa – không có giai cấp, không áp bức, không bóc lột.",
+                    "Khẩu hiệu: \"Vô sản toàn thế giới, liên hiệp lại!\""
+                ],
+                "impactTitle": "Tác động",
+                "impact": "Trở thành cương lĩnh đấu tranh của phong trào công nhân quốc tế.",
+                "caption": "Trang bìa Tuyên ngôn Cộng sản xuất bản lần đầu",
+                "paragraph1": "Tuyên ngôn Cộng sản được xuất bản năm 1848 tại Luân Đôn.",
+                "paragraph2": "Ngay lập tức trở thành cương lĩnh chung cho các tổ chức công nhân cách mạng.",
+                "paragraph3": "Được dịch ra nhiều thứ tiếng, lan rộng khắp châu Âu và thế giới.",
+                "paragraph4": "Giá trị lịch sử của tác phẩm vẫn còn nguyên như lời hiệu triệu đoàn kết và đấu tranh.",
+                "quote": "\"Sự phát triển tự do của mỗi người là điều kiện cho sự phát triển tự do của tất cả mọi người.\""
+            },
+            "section2": {
+                "number": "02",
+                "title": "Sự phát triển CNXHKH bởi Lênin",
+                "intro": "Lênin đã phát triển CNXHKH để phù hợp với thời kỳ mới, khi CNTB bước sang giai đoạn đế quốc, chiến tranh và mâu thuẫn giai cấp ngày càng gay gắt.",
+                "highlight": {
+                    "title": "Điểm nhấn",
+                    "items": [
+                        "Phân tích chủ nghĩa tư bản độc quyền (chủ nghĩa đế quốc).",
+                        "Đề xuất Đảng Cộng sản kiểu mới – đội tiên phong của giai cấp công nhân.",
+                        "Khẳng định cách mạng XHCN có thể nổ ra trước tiên ở một số nước, không cần toàn thế giới cùng lúc.",
+                        "Xây dựng lý luận về nhà nước XHCN và chuyên chính vô sản."
+                    ]
+                },
+                "extra": {
+                    "title": "Tiền đề bổ sung",
+                    "items": [
+                        "CNTB chuyển sang giai đoạn đế quốc → mâu thuẫn gay gắt.",
+                        "Giai cấp công nhân và phong trào cách mạng phát triển.",
+                        "Bối cảnh chiến tranh thế giới và khủng hoảng xã hội."
+                    ]
+                },
+                "caption": "Lênin – Người phát triển học thuyết Mác trong thời đại mới",
+                "vietnam": {
+                    "title": "Hồ Chí Minh và CNXHKH tại Việt Nam",
+                    "content": [
+                        "Hồ Chí Minh vận dụng sáng tạo CNXHKH vào cách mạng Việt Nam: cách mạng thuộc địa có thể thắng lợi trước cách mạng vô sản ở chính quốc.",
+                        "Người đã lãnh đạo thành lập Đảng Cộng sản Việt Nam, tiến hành cách mạng dân chủ, cách mạng XHCN và sự nghiệp đổi mới hơn 36 năm qua."
+                    ]
+                }
+            },
+            "section3": {
+                "number": "03",
+                "title": "Vận dụng CNXHKH ở các nước XHCN",
+                "intro": "Các phong trào cách mạng trên thế giới đã vận dụng linh hoạt CNXHKH, mỗi nước theo bối cảnh riêng, nhưng đều dựa trên nền tảng Mác – Lênin.",
+                "caption": "CNXHKH được vận dụng ở nhiều quốc gia",
+                "countries": {
+                    "ussr": "Nhà nước XHCN đầu tiên, khởi nguồn từ Cách mạng Tháng Mười.",
+                    "china": "Kết hợp CNXHKH với thực tiễn nông thôn.",
+                    "vietnam": "Kiên định con đường CNXHKH gắn với giải phóng dân tộc.",
+                    "cuba": "Con đường XHCN ở khu vực Mỹ Latinh."
+                },
+                "conclusion": "Dù mỗi quốc gia có điều kiện khác nhau, nhưng đều dựa vào CNXHKH làm nền tảng phát triển."
+            },
+            "section4": {
+                "number": "04",
+                "title": "Ý nghĩa thời đại của CNXHKH",
+                "intro": "CNXHKH không chỉ là một học thuyết lý luận, mà đã trở thành sức mạnh vật chất và phong trào toàn cầu.",
+                "points": {
+                    "science": {
+                        "title": "Cơ sở khoa học để phân tích xã hội",
+                        "content": "Cung cấp phương pháp duy vật biện chứng và duy vật lịch sử, lý giải bản chất xã hội loài người và mâu thuẫn giai cấp."
+                    },
+                    "movement": {
+                        "title": "Kim chỉ nam cho phong trào công nhân quốc tế",
+                        "content": "Từ cuối thế kỷ XIX, CNXHKH trở thành nền tảng lý luận cho các tổ chức công nhân và phong trào cách mạng."
+                    },
+                    "state": {
+                        "title": "Hình thành hệ thống nhà nước XHCN",
+                        "content": "Thắng lợi Cách mạng Tháng Mười Nga năm 1917 mở ra kỷ nguyên mới: CNXHKH được hiện thực hóa thành nhà nước."
+                    },
+                    "values": {
+                        "title": "Giá trị lâu dài, bền vững",
+                        "content": "Dù thế giới thay đổi, CNXHKH vẫn là nền tảng tư tưởng của nhiều Đảng Cộng sản và công nhân."
+                    }
+                },
+                "finalQuote": "\"Có thể nói, CNXHKH vừa là ngọn đuốc lý luận soi đường, vừa là động lực chính trị – xã hội cho phong trào công nhân và các dân tộc bị áp bức.\""
+            }
+        }
+    },
+    "infographic": {
+        "subtitle": "CNXH KHÔNG TƯỞNG & CNXH KHOA HỌC",
+        "intro": "Chủ nghĩa xã hội (CNXH) đã trải qua nhiều giai đoạn phát triển. Từ những ước mơ lý tưởng của các nhà tư tưởng nhân đạo thời kỳ đầu, đến lý luận khoa học của Karl Marx và Friedrich Engels, CNXH dần trở thành một phong trào xã hội có cơ sở lý luận và phương pháp đấu tranh rõ ràng.",
+        "comparisonTitle": "So sánh CNXH không tưởng vs CNXH khoa học",
+        "timelineTitle": "Timeline: từ CNXH không tưởng → CNXH khoa học",
+        "conclusionTitle": "Kết luận",
+        "conclusionText": "CNXH không tưởng để lại những giá trị nhân văn và lý tưởng về công bằng, trong khi CNXH khoa học cung cấp cơ sở lý luận, phương pháp và chiến lược để phong trào công nhân có thể hiện thực hóa các mục tiêu đó. Cả hai đều đóng vai trò quan trọng trong tiến trình lịch sử nhân loại.",
+        "table": [
+            {
+                "aspect": "Thời kỳ hình thành",
+                "utopian": "Đầu thế kỷ XIX, trong bối cảnh chủ nghĩa tư bản mới phát triển, giai cấp công nhân chưa trưởng thành.",
+                "scientific": "Giữa thế kỷ XIX (sau 1848), khi giai cấp công nhân đã hình thành, đấu tranh mạnh mẽ."
+            },
+            {
+                "aspect": "Cơ sở lý luận",
+                "utopian": "Ý chí, đạo đức, mơ ước về xã hội tốt đẹp",
+                "scientific": "Quy luật lịch sử–xã hội, duy vật lịch sử, đấu tranh giai cấp"
+            },
+            {
+                "aspect": "Phương pháp",
+                "utopian": "Thiết kế “mô hình lý tưởng”, thuyết phục tầng lớp trên",
+                "scientific": "Phân tích khoa học, tổ chức lực lượng công nhân, cách mạng xã hội"
+            },
+            {
+                "aspect": "Chủ thể",
+                "utopian": "Các “nhà cải cách” nhân đạo",
+                "scientific": "Giai cấp công nhân liên minh với các lực lượng lao động khác"
+            },
+            {
+                "aspect": "Mục tiêu",
+                "utopian": "Công bằng, bác ái, hợp tác",
+                "scientific": "Xóa bỏ áp bức bóc lột, thiết lập CNXH/CSC bằng lực lượng hiện thực"
+            },
+            {
+                "aspect": "Cách đạt được",
+                "utopian": "Thử nghiệm cộng đồng, kêu gọi lương tri",
+                "scientific": "Tổ chức chính trị, đấu tranh, nắm chính quyền, cải biến QHSX"
+            },
+            {
+                "aspect": "Hạn chế/Ưu điểm",
+                "utopian": "Nhân văn nhưng thiếu khả thi, thiếu quy luật",
+                "scientific": "Tính khoa học, khả thi lịch sử; vẫn cần vận dụng sáng tạo theo thời đại"
+            },
+            {
+                "aspect": "Di sản",
+                "utopian": "Gợi ý về công bằng, phúc lợi",
+                "scientific": "Khung lý luận – phương pháp cho phong trào công nhân hiện đại"
+            }
+        ],
+        "timeline": [
+            {
+                "year": "1516",
+                "event": "Utopia (Thomas More): mầm mống tư tưởng bình đẳng"
+            },
+            {
+                "year": "Cuối TK XVIII – đầu XIX",
+                "event": "Saint-Simon, Fourier, Owen: mô hình cộng đồng lý tưởng → CNXH không tưởng"
+            },
+            {
+                "year": "1848",
+                "event": "Tuyên ngôn của Đảng Cộng sản (Marx & Engels): khai sinh CNXH khoa học"
+            },
+            {
+                "year": "1864–1876",
+                "event": "Quốc tế I; 1867 – Tư bản (Quyển I)"
+            },
+            {
+                "year": "1871",
+                "event": "Công xã Paris: thực nghiệm chính quyền của người lao động"
+            },
+            {
+                "year": "1889",
+                "event": "Quốc tế II; Ngày Quốc tế Lao động 1/5"
+            },
+            {
+                "year": "Thế kỷ XX",
+                "event": "Phong trào công nhân toàn cầu; chuẩn mực lao động, nhà nước phúc lợi, cách mạng XHCN ở một số nước"
+            },
+            {
+                "year": "Hiện đại",
+                "event": "Phong trào lao động trong bối cảnh số hóa, toàn cầu hoá, kinh tế nền tảng"
+            }
+        ]
+    },
+    "blogpage": {
+        "selectTopic": "Chọn chủ đề lịch sử:",
+        "summaryTitle": "Tóm tắt:",
+        "fullContentTitle": "Nội dung chi tiết:",
+        "loading": "Đang tải nội dung lịch sử...",
+        "error": "Lỗi:",
+        "updatedAt": "Cập nhật:",
+        "readMore": "📖 Đọc thêm trên Wikipedia",
+        "topics": {
+            "Karl_Marx": {
+                "title": "Karl Marx",
+                "description": "Nhà tư tưởng vĩ đại của chủ nghĩa xã hội"
+            },
+            "Friedrich_Engels": {
+                "title": "Friedrich Engels",
+                "description": "Đồng sáng lập chủ nghĩa xã hội khoa học"
+            },
+            "Vladimir_Lenin": {
+                "title": "Vladimir Lenin",
+                "description": "Lãnh tụ cách mạng Nga và lý luận gia Marxist"
+            },
+            "Ho_Chi_Minh": {
+                "title": "Hồ Chí Minh",
+                "description": "Chủ tịch Hồ Chí Minh - Người anh hùng dân tộc"
+            },
+            "Communist_Manifesto": {
+                "title": "Tuyên ngôn Đảng Cộng sản",
+                "description": "Tác phẩm kinh điển của Marx và Engels"
+            },
+            "Russian_Revolution": {
+                "title": "Cách mạng Nga 1917",
+                "description": "Cuộc cách mạng thay đổi thế giới"
+            }
+        }
+    },
+    "socialistComparison": {
+        "subtitle": "2. So sánh CNXH Không tưởng và CNXH Khoa học",
+        "criteria": [
+            {
+                "title": "Thời kỳ hình thành",
+                "utopian": "Đầu thế kỷ XIX, trong bối cảnh chủ nghĩa tư bản mới phát triển, giai cấp công nhân chưa trưởng thành.",
+                "scientific": "Giữa thế kỷ XIX (sau 1848), khi giai cấp công nhân đã hình thành, đấu tranh mạnh mẽ."
+            },
+            {
+                "title": "Cơ sở lý luận",
+                "utopian": "Xuất phát từ lý tưởng đạo đức, lòng nhân ái, khát vọng công bằng.",
+                "scientific": "Dựa trên chủ nghĩa duy vật lịch sử và duy vật biện chứng; phân tích khoa học quy luật phát triển xã hội."
+            },
+            {
+                "title": "Mục tiêu",
+                "utopian": "Mơ ước xây dựng xã hội công bằng, bình đẳng, bác ái.",
+                "scientific": "Xây dựng xã hội cộng sản chủ nghĩa thông qua đấu tranh giai cấp và cách mạng vô sản."
+            },
+            {
+                "title": "Phương pháp",
+                "utopian": "Đề xuất mô hình lý tưởng (cộng đồng chung sống, phân chia công bằng…) nhưng không có cách thức thực hiện cụ thể.",
+                "scientific": "Gắn với phong trào công nhân, đấu tranh chính trị, cách mạng xã hội, tổ chức đảng cách mạng."
+            },
+            {
+                "title": "Đại diện tiêu biểu",
+                "utopian": "Henri de Saint-Simon, Charles Fourier, Robert Owen.",
+                "scientific": "Karl Marx, Friedrich Engels."
+            },
+            {
+                "title": "Hạn chế / Ưu điểm",
+                "utopian": "Ưu điểm: khơi gợi khát vọng công bằng, chỉ ra bất công của tư bản.\nHạn chế: thiếu cơ sở khoa học, không khả thi trong thực tiễn.",
+                "scientific": "Ưu điểm: khoa học, gắn với thực tiễn phong trào công nhân, định hướng cách mạng.\nHạn chế: cần bổ sung, phát triển qua thực tiễn lịch sử."
+            }
+        ]
+    },
+    "interactiveWorldMap": {
+        "title": "🌍 Bản đồ Tư tưởng XHCN",
+        "clickInfo": "Click vào các điểm để xem chi tiết lịch sử",
+        "eventsCount": "{count} sự kiện được hiển thị",
+        "timelineTitle": "🕰️ Dòng thời gian phát triển",
+        "periods": [
+            {
+                "id": "all",
+                "name": "Tất cả",
+                "color": "#6B7280"
+            },
+            {
+                "id": "ancient",
+                "name": "Thời cổ đại",
+                "color": "#8B4513"
+            },
+            {
+                "id": "medieval",
+                "name": "Thời cận đại",
+                "color": "#4A5568"
+            },
+            {
+                "id": "modern",
+                "name": "Thế kỷ 18-19",
+                "color": "#2B6CB0"
+            },
+            {
+                "id": "scientific",
+                "name": "CNXH khoa học",
+                "color": "#DC2626"
+            }
+        ],
+        "historicalEvents": [
+            {
+                "id": "plato",
+                "name": "Plato - Cộng hòa",
+                "year": "380 TCN",
+                "location": "Athens, Hy Lạp",
+                "coordinates": {
+                    "x": 55,
+                    "y": 45
+                },
+                "description": "Mô tả xã hội lý tưởng với phân chia giai cấp theo tài năng",
+                "color": "#8B4513",
+                "period": "ancient",
+                "icon": "🏛️",
+                "number": 1
+            },
+            {
+                "id": "more",
+                "name": "Thomas More - Utopia",
+                "year": "1516",
+                "location": "London, Anh",
+                "coordinates": {
+                    "x": 50,
+                    "y": 35
+                },
+                "description": "Xã hội không tư hữu, mọi người bình đẳng",
+                "color": "#4A5568",
+                "period": "medieval",
+                "icon": "📚",
+                "number": 2
+            },
+            {
+                "id": "campanella",
+                "name": "Campanella - Thành phố Mặt Trời",
+                "year": "1623",
+                "location": "Calabria, Ý",
+                "coordinates": {
+                    "x": 52,
+                    "y": 42
+                },
+                "description": "Mô hình cộng đồng lý tưởng với chế độ công hữu",
+                "color": "#4A5568",
+                "period": "medieval",
+                "icon": "☀️",
+                "number": 3
+            },
+            {
+                "id": "saint-simon",
+                "name": "Saint-Simon",
+                "year": "1821",
+                "location": "Paris, Pháp",
+                "coordinates": {
+                    "x": 51,
+                    "y": 38
+                },
+                "description": "Nhấn mạnh vai trò khoa học, kỹ sư, nhà công nghiệp",
+                "color": "#2B6CB0",
+                "period": "modern",
+                "icon": "🔬",
+                "number": 4
+            },
+            {
+                "id": "fourier",
+                "name": "Charles Fourier",
+                "year": "1808",
+                "location": "Besançon, Pháp",
+                "coordinates": {
+                    "x": 51.5,
+                    "y": 37
+                },
+                "description": "Cộng đồng 'phalanstère' sống chung, chia sẻ",
+                "color": "#2B6CB0",
+                "period": "modern",
+                "icon": "🏘️",
+                "number": 5
+            },
+            {
+                "id": "owen",
+                "name": "Robert Owen",
+                "year": "1813",
+                "location": "New Lanark, Scotland",
+                "coordinates": {
+                    "x": 49,
+                    "y": 32
+                },
+                "description": "Cải cách xã hội qua các khu công nghiệp kiểu mẫu",
+                "color": "#2B6CB0",
+                "period": "modern",
+                "icon": "🏭",
+                "number": 6
+            },
+            {
+                "id": "marx-engels",
+                "name": "Marx & Engels",
+                "year": "1848",
+                "location": "London, Anh",
+                "coordinates": {
+                    "x": 50,
+                    "y": 35
+                },
+                "description": "Tuyên ngôn Đảng Cộng sản - CNXH khoa học",
+                "color": "#DC2626",
+                "period": "scientific",
+                "icon": "⚡",
+                "number": 7
+            }
+        ]
+    },
+    "footer": {
+        "title": "Triết Học Marx–Lenin",
+        "description": "MLN131 - Nền tảng học thuật và nghiên cứu triết học Marx-Lenin.",
+        "contact": {
+            "title": "Liên hệ",
+            "email": "Email: info@mln131.com",
+            "phone": "Điện thoại: 090 123 4567",
+            "address": "Địa chỉ: hẽm 32 Võ Văn Hát, Long Trường, Thủ Đức, TP Hồ Chí Minh"
+        },
+        "followUs": "Theo dõi chúng tôi",
+        "slogan": "Vô sản toàn thế giới, liên hiệp lại!"
+    },
+    "quiz": {
+        "quizTitle": "Mini-Quiz",
+        "question": "Câu",
+        "answer": "Đáp án",
+        "explanation": "Giải thích",
+        "correct": "🎉 Chúc mừng!",
+        "wrong": "😢 Sai",
+        "resultTitle": "Kết quả Mini-Quiz",
+        "score": "Điểm của bạn: {score} / {total}",
+        "playAgain": "Chơi lại",
+        "questions": [
+            {
+                "question": "CNXH 'không tưởng' nhấn mạnh điều gì?",
+                "options": [
+                    {
+                        "text": "Quy luật kinh tế khách quan",
+                        "value": "A"
+                    },
+                    {
+                        "text": "Đạo đức & mô hình lý tưởng",
+                        "value": "B",
+                        "correct": true
+                    },
+                    {
+                        "text": "Bạo lực cách mạng",
+                        "value": "C"
+                    },
+                    {
+                        "text": "Công nghệ",
+                        "value": "D"
+                    }
+                ],
+                "explanation": "CNXH 'không tưởng' tập trung vào lý tưởng đạo đức và các mô hình xã hội lý tưởng, do các nhà tư tưởng như Owen, Fourier đề xuất, thiếu cơ sở khoa học."
+            },
+            {
+                "question": "Văn kiện nào đánh dấu bước ngoặt sang CNXHKH?",
+                "options": [
+                    {
+                        "text": "Tư bản (Quyển I)",
+                        "value": "A"
+                    },
+                    {
+                        "text": "Utopia",
+                        "value": "B"
+                    },
+                    {
+                        "text": "Tuyên ngôn của Đảng Cộng sản (1848)",
+                        "value": "C",
+                        "correct": true
+                    },
+                    {
+                        "text": "Tuyên ngôn Nhân quyền",
+                        "value": "D"
+                    }
+                ],
+                "explanation": "Tuyên ngôn của Đảng Cộng sản (1848) của Marx và Engels đánh dấu sự chuyển từ CNXH không tưởng sang CNXH khoa học."
+            },
+            {
+                "question": "Chủ thể trung tâm của CNXHKH là:",
+                "options": [
+                    {
+                        "text": "Trí thức",
+                        "value": "A"
+                    },
+                    {
+                        "text": "Quý tộc khai sáng",
+                        "value": "B"
+                    },
+                    {
+                        "text": "Giai cấp công nhân",
+                        "value": "C",
+                        "correct": true
+                    },
+                    {
+                        "text": "Nông dân cá thể",
+                        "value": "D"
+                    }
+                ],
+                "explanation": "Giai cấp công nhân được xem là lực lượng trung tâm trong CNXHKH, dẫn dắt cách mạng xã hội."
+            },
+            {
+                "question": "Công xã Paris (1871) cho bài học quan trọng nào?",
+                "options": [
+                    {
+                        "text": "Thị trường tự điều tiết",
+                        "value": "A"
+                    },
+                    {
+                        "text": "Khả năng người lao động tự quản nhà nước",
+                        "value": "B",
+                        "correct": true
+                    },
+                    {
+                        "text": "Bãi bỏ bầu cử",
+                        "value": "C"
+                    },
+                    {
+                        "text": "Kế hoạch hóa cứng nhắc",
+                        "value": "D"
+                    }
+                ],
+                "explanation": "Công xã Paris chứng minh người lao động có thể tự quản nhà nước, một mô hình tiên tiến của CNXHKH."
+            },
+            {
+                "question": "Trong vận dụng ở Việt Nam, 'định hướng XHCN' của KTTT nhấn mạnh:",
+                "options": [
+                    {
+                        "text": "Chỉ có sở hữu nhà nước",
+                        "value": "A"
+                    },
+                    {
+                        "text": "Tăng trưởng kèm công bằng, an sinh, vai trò kiến tạo của Nhà nước",
+                        "value": "B",
+                        "correct": true
+                    },
+                    {
+                        "text": "Đóng cửa hội nhập",
+                        "value": "C"
+                    },
+                    {
+                        "text": "Bỏ qua pháp quyền",
+                        "value": "D"
+                    }
+                ],
+                "explanation": "Định hướng XHCN ở Việt Nam kết hợp tăng trưởng kinh tế với công bằng xã hội và vai trò quản lý của Nhà nước."
+            },
+            {
+                "question": "Nhà tư tưởng nào được xem là người đặt nền móng cho CNXH không tưởng?",
+                "options": [
+                    {
+                        "text": "Karl Marx",
+                        "value": "A"
+                    },
+                    {
+                        "text": "Friedrich Engels",
+                        "value": "B"
+                    },
+                    {
+                        "text": "Robert Owen",
+                        "value": "C",
+                        "correct": true
+                    },
+                    {
+                        "text": "Vladimir Lenin",
+                        "value": "D"
+                    }
+                ],
+                "explanation": "Robert Owen là một trong những nhà tư tưởng đầu tiên của CNXH không tưởng, đề xuất các cộng đồng lý tưởng dựa trên đạo đức và hợp tác."
+            },
+            {
+                "question": "CNXHKH khác CNXH không tưởng ở điểm nào quan trọng nhất?",
+                "options": [
+                    {
+                        "text": "Sử dụng bạo lực thay vì lý tưởng",
+                        "value": "A"
+                    },
+                    {
+                        "text": "Dựa trên phân tích khoa học và thực tiễn kinh tế",
+                        "value": "B",
+                        "correct": true
+                    },
+                    {
+                        "text": "Chỉ tập trung vào nông dân",
+                        "value": "C"
+                    },
+                    {
+                        "text": "Loại bỏ vai trò của giai cấp công nhân",
+                        "value": "D"
+                    }
+                ],
+                "explanation": "CNXHKH của Marx và Engels dựa trên phân tích khoa học về lịch sử và kinh tế, trong khi CNXH không tưởng chỉ dựa trên lý tưởng chủ quan."
+            },
+            {
+                "question": "Tác phẩm nào của Marx và Engels được xem là nền tảng lý luận của CNXHKH?",
+                "options": [
+                    {
+                        "text": "Utopia",
+                        "value": "A"
+                    },
+                    {
+                        "text": "Tư bản (Das Kapital)",
+                        "value": "B"
+                    },
+                    {
+                        "text": "Tuyên ngôn của Đảng Cộng sản",
+                        "value": "C",
+                        "correct": true
+                    },
+                    {
+                        "text": "Nhà nước và Cách mạng",
+                        "value": "D"
+                    }
+                ],
+                "explanation": "Tuyên ngôn của Đảng Cộng sản (1848) là tài liệu quan trọng định hình CNXHKH với quan điểm cách mạng giai cấp."
+            },
+            {
+                "question": "CNXH không tưởng chủ yếu xuất hiện trong thời kỳ nào?",
+                "options": [
+                    {
+                        "text": "Thế kỷ 19",
+                        "value": "A"
+                    },
+                    {
+                        "text": "Thế kỷ 18",
+                        "value": "B",
+                        "correct": true
+                    },
+                    {
+                        "text": "Thế kỷ 20",
+                        "value": "C"
+                    },
+                    {
+                        "text": "Thế kỷ 17",
+                        "value": "D"
+                    }
+                ],
+                "explanation": "CNXH không tưởng phát triển mạnh trong thế kỷ 18, với các tư tưởng của Rousseau, More, và các nhà cải cách xã hội."
+            },
+            {
+                "question": "Mục tiêu cuối cùng của CNXHKH là gì?",
+                "options": [
+                    {
+                        "text": "Xây dựng xã hội lý tưởng không có giai cấp",
+                        "value": "A",
+                        "correct": true
+                    },
+                    {
+                        "text": "Tăng cường quyền lực cho tầng lớp quý tộc",
+                        "value": "B"
+                    },
+                    {
+                        "text": "Phát triển công nghệ tối đa",
+                        "value": "C"
+                    },
+                    {
+                        "text": "Bảo vệ chế độ tư bản",
+                        "value": "D"
+                    }
+                ],
+                "explanation": "CNXHKH hướng tới xã hội không giai cấp, nơi mọi người được giải phóng khỏi áp bức kinh tế và xã hội."
+            }
+        ]
     }
 }

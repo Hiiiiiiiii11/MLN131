@@ -1,76 +1,706 @@
 {
-  "sidebar": {
-    "side-bar1": "Introduction",
-    "side-bar2": "Principle of Relationship",
-    "side-bar3": "Principles of Development",
-    "side-bar4": "References"
+  "mainlayout": {
+    "welcome": "🌍 Welcome to the history website – where we explore the journey from Utopian Socialism\n to Scientific Socialism ✨.\nLearn about the ideas, people and turning points that changed the course of humanity!"
   },
-  "homecontent": {
-    "title": "Principles of dialectical materialism",
-    "concept": "Concept : ",
-    "concept-content": "Dialectical materialism is the basic methodological method in Marxist-Leninist philosophy, aiming to help people understand the nature and laws of development of the material world and consciousness..",
-    "target": "Target : ",
-    "target-content": "Present the content of dialectical materialism and analyze the two main principles, thereby seeing their application in practice..",
-    "title2": "Two principles of dialectical materialism",
-    "principle1": "Principle of universal connection",
-    "principle1-content1": "It is the interaction, the bond, the mutual influence between those individual things and phenomena. It is like invisible strings connecting everything together.",
-    "principle2": "Principle of development",
-    "principle1-content2": "Development is the process of moving upward, from low to high, from simple to complex, from less perfect to more perfect.",
-    "home-content": "Looking at this picture, what do you see?",
-    "connectprinciple": "Nature of the connections",
-    "connect-titleadd1": "Common Connection Principles",
-    "connect-titleadd1-content1": "Contact : ",
-    "connect-titleadd1-sub-content1": "It is the mutual impact, the bond, the mutual influence between those individual things and phenomena. It's like invisible wires that connect everything together.",
-    "connect-titleadd1-content2": "Popular Contacts : ",
-    "connect-titleadd1-sub-content2": "Pointing out that the relationship, the interaction does not only occur in a few places, in a few fields, but it is an inherent characteristic, existing everywhere, in all things, phenomena, in all areas of the world.",
-    "connect-title1": "Objectivity",
-    "connect-content1": "Connections exist independently of human consciousness. They are not thought or imposed by someone but are the inherent nature of things and phenomena.",
-    "connect-title2": "Universality",
-    "connect-content2": "Connections exist everywhere, in every sphere of nature, society, and thought. No thing or phenomenon is completely isolated.",
-    "connect-title3": "Variety and Richness",
-    "connect-content3": "Relationships are not monotonous but manifest in countless different forms, depending on the nature, role and mode of impact of things and phenomena.",
-    "connect-subcontent1": "Direct and indirect common contact",
-    "connect-subcontent2": "The universal connection of nature and phenomena",
-    "connect-subcontent3": "Primary and secondary common connections",
-    "connect-subcontent4": "Common connections, of course, and random",
-    "connect-titleadd2": "Common Connection Meaning",
-    "connect-titleadd2-content1": "Considering things and phenomena in the overall relationships.",
-    "connect-titleadd2-content2": "Avoid one-sided, isolated, or absolutizing an individual element.",
-    "connect-titleadd2-content3": "Properly analyze the nature, location, and role of relationships to recognize and solve problems effectively.",
-    "developprinciple": "Principles of development",
-    "develop-content1": "Development is the process of movement from low to high, from simple to complex",
-    "develop-content2": "Development is not only quantitative growth but also quality change",
-    "develop-content3": "“Development is the process of moving upwards, from low to high, from simple to complex, from less complete to more complete” (Textbook of Marxist-Leninist Philosophy, 2019, p.104).",
-    "develop-title1": "Content of the tenet of development",
-    "develop-sub-content1": "All things and phenomena in the world are constantly moving and developing",
-    "develop-sub-content2": "The source of development lies in the internal contradictions of things",
-    "develop-sub-content3": "Development takes place according to the law",
-    "develop-sub-content4": "“The source of development is contradiction, that is, the struggle between opposites in the interior of things and phenomena” (Marxist-Leninist Philosophy Textbook, 2019, p.105).",
-    "develop-title2": "Aspects of the Principle of Development",
-    "develop-title2-sub-content1": "Conflict is the driving force : ",
-    "develop-title2-sub-sub-content1": "The struggle between opposites in things promotes development.",
-    "develop-title2-sub-content2": "Amount to substance : ",
-    "develop-title2-sub-sub-content2": "Changes in quantity to the threshold will create a qualitative leap.",
-    "develop-title2-sub-content3": "Non-linear development : ",
-    "develop-title2-sub-sub-content3": "There may be a temporary setback, but the general trend is progressive.",
-    "develop-title3": "The Meaning of the Principle of Development",
-    "develop-title3-sub-content1": "In awareness : ",
-    "develop-title3-sub-sub-content1": "Understand things in motion, not fixed.",
-    "develop-title3-sub-content2": "In practice : ",
-    "develop-title3-sub-sub-content2": "Encourage innovation and conflict resolution for progress.",
-    "develop-title4": "Conclude",
-    "develop-title4-sub-content1": "The principle of development explains the nature of the world's movement and progress.",
-    "develop-title4-sub-content2": "Helps direct dynamic thinking and creative action.",
-    "develop-title4-sub-content3": "Call: Identify contradictions and promote growth in life!",
-    "develop-titleadd": "Nature of development",
-    "develop-titleadd-content1": "Objectivity",
-    "develop-titleadd-sub-content1": "The source of development lies in the thing itself.",
-    "develop-titleadd-content2": "Universality",
-    "develop-titleadd-sub-content2": "The development process takes place in any phenomenon, in any field.",
-    "develop-titleadd-content3": "Inheritance",
-    "develop-titleadd-sub-content3": "The development of creating the new and inheriting will retain the rational, renovate the elements that are still effective, and at the same time dismiss the negative and outdated aspects..",
-    "develop-titleadd-content4": "Richness and diversity",
-    "develop-titleadd-sub-content4": "Each phenomenon has a different development process. It does not always take place in a straight line, but is very winding and complicated.",
-    "develop-titleadd2": "Real-life examples"
+  "header": {
+    "title": "Marxism–Leninism philosophy"
+  },
+  "navbar": {
+    "home": "Home",
+    "introduction": "Introduction",
+    "news": "News & Interactive",
+    "infographic": "Infographic",
+    "blog": "Blog"
+  },
+  "home": {
+    "mainTitle": "Scientific Socialism and Utopian Socialism",
+    "subtitle": "Explore the history and philosophy of two major ideologies",
+    "marxTitle": "Karl Heinrich Marx",
+    "marxContent": "(1818–1883) was a German philosopher, economist, historian, sociologist, political theorist, journalist, and revolutionary socialist. He co-authored 'The Communist Manifesto' (1848) and wrote 'Das Kapital'. His ideas had a profound influence on modern knowledge, economics, and politics.",
+    "engelsTitle": "Friedrich Engels",
+    "engelsContent": "Born on November 28, 1820 in Barmen, Prussia, Engels became one of the greatest revolutionary activists. Together with Karl Marx, he co-founded Scientific Communism, leaving a lasting impact on the international workers' movement.",
+    "leninTitle": "Lenin",
+    "leninContent": "Vladimir Ilyich Lenin was the leader of the Russian revolutionary movement. He developed Marx and Engels' theory, founded the Communist International, and led the October Revolution (1917) to establish the world's first workers' and peasants' state.",
+    "section1Title": "1. Socialist Thought in Human History",
+    "section1Content": "Before Marx and Engels, many thinkers envisioned a just society without oppression. However, these theories lacked scientific basis and remained 'utopian'.",
+    "timeline": {
+      "ancient": {
+        "title": "Ancient Period",
+        "items": [
+          "Plato with 'The Republic' – an ideal society divided by talent."
+        ]
+      },
+      "modern": {
+        "title": "Modern Period",
+        "items": [
+          "Thomas More (Utopia, 1516) – a society without private property, with equality.",
+          "Tommaso Campanella (City of the Sun) – a model of an ideal community."
+        ]
+      },
+      "18_19": {
+        "title": "18th–19th Century (Utopian Socialism)",
+        "items": [
+          "Henri de Saint-Simon – emphasized the role of science, engineers, and industry.",
+          "Charles Fourier – 'phalanstère' communities of shared living.",
+          "Robert Owen – social reform through model industrial communities."
+        ]
+      }
+    }
+  },
+  "introduction": {
+    "subtitle": "1. Two different approaches to socialism",
+    "paragraph1": "Utopian socialism emerged in the early 19th century, initiated by thinkers such as Saint-Simon, Fourier, and Owen. It was based on moral ideals and aspirations for justice but lacked scientific foundation and revolutionary practice.",
+    "paragraph2": "Scientific socialism, built by Karl Marx and Friedrich Engels in the mid-19th century, relied on scientific analysis of society and historical development laws, becoming the foundation of the modern workers' movement.",
+    "diffTitle": "Basic differences:",
+    "diff1": "Utopian: Based on morality, compassion → impractical.",
+    "diff2": "Scientific: Based on historical materialism, analyzing social development laws → practical and tied to reality.",
+    "roleTitle": "Role",
+    "roleText": "Scientific socialism provides methods, theory, and revolutionary strategies for the workers' movement.",
+    "captionUtopian": "Utopian Socialism – Ideals, morality, lacking scientific foundation",
+    "captionScientific": "Scientific Socialism – Scientific foundation, linked to workers' movement"
+  },
+  "news": {
+    "header": {
+      "title": "SCIENTIFIC SOCIALISM",
+      "subtitle": "HISTORICAL FORMATION AND CONTEMPORARY SIGNIFICANCE"
+    },
+    "sections": {
+      "section1": {
+        "number": "01",
+        "title": "The Communist Manifesto (1848)",
+        "intro": "A classic work by Marx & Engels, presenting for the first time the comprehensive system of scientific socialism, becoming the program of struggle for the international workers' movement.",
+        "mainTitle": "Main contents",
+        "mainPoints": [
+          "The history of human society is the history of class struggle.",
+          "The working class is the revolutionary force to abolish capitalism.",
+          "The ultimate goal: building a communist society – classless, without oppression or exploitation.",
+          "Slogan: \"Workers of the world, unite!\""
+        ],
+        "impactTitle": "Impact",
+        "impact": "Became the program of struggle for the international workers' movement.",
+        "caption": "First edition of The Communist Manifesto",
+        "paragraph1": "The Communist Manifesto was published in 1848 in London.",
+        "paragraph2": "It immediately became the common program for revolutionary workers' organizations.",
+        "paragraph3": "Translated into many languages, it spread widely across Europe and beyond.",
+        "paragraph4": "Its historical value endures as a call to unity and struggle.",
+        "quote": "\"The free development of each is the condition for the free development of all.\""
+      },
+      "section2": {
+        "number": "02",
+        "title": "The Development of Scientific Socialism by Lenin",
+        "intro": "Lenin developed scientific socialism to suit the new era, when capitalism entered the stage of imperialism, with wars and increasingly intense class conflicts.",
+        "highlight": {
+          "title": "Key points",
+          "items": [
+            "Analyzed monopoly capitalism (imperialism).",
+            "Proposed the Communist Party of a new type – the vanguard of the working class.",
+            "Affirmed that socialist revolution could break out first in some countries, not necessarily simultaneously worldwide.",
+            "Developed the theory of the socialist state and the dictatorship of the proletariat."
+          ]
+        },
+        "extra": {
+          "title": "Additional premises",
+          "items": [
+            "Capitalism shifted to the stage of imperialism → contradictions intensified.",
+            "The working class and revolutionary movements developed.",
+            "Context of world wars and social crises."
+          ]
+        },
+        "caption": "Lenin – developer of Marxism in the new era",
+        "vietnam": {
+          "title": "Ho Chi Minh and Scientific Socialism in Vietnam",
+          "content": [
+            "Ho Chi Minh creatively applied scientific socialism in Vietnam: the colonial revolution could succeed before the proletarian revolution in the metropole.",
+            "He led the founding of the Communist Party of Vietnam, the democratic and socialist revolutions, and the 36-year renewal process."
+          ]
+        }
+      },
+      "section3": {
+        "number": "03",
+        "title": "Application of Scientific Socialism in Socialist Countries",
+        "intro": "Revolutionary movements worldwide flexibly applied scientific socialism, each in its own context, but all based on Marxism–Leninism.",
+        "caption": "Scientific socialism applied in different countries",
+        "countries": {
+          "ussr": "The first socialist state, born from the October Revolution.",
+          "china": "Combined scientific socialism with rural realities.",
+          "vietnam": "Consistently followed the path of socialism, linked with national liberation.",
+          "cuba": "The socialist path in Latin America."
+        },
+        "conclusion": "Although each country has different conditions, all relied on scientific socialism as the foundation for development."
+      },
+      "section4": {
+        "number": "04",
+        "title": "The Contemporary Significance of Scientific Socialism",
+        "intro": "Scientific socialism is not just a theoretical doctrine, but has become a material force and a global movement.",
+        "points": {
+          "science": {
+            "title": "A scientific basis for social analysis",
+            "content": "Provides dialectical and historical materialism, explaining the essence of human society and class contradictions."
+          },
+          "movement": {
+            "title": "Guiding light for the international workers’ movement",
+            "content": "Since the late 19th century, scientific socialism became the theoretical foundation for workers’ organizations and revolutionary movements."
+          },
+          "state": {
+            "title": "Formation of the socialist state system",
+            "content": "The victory of the October Revolution in 1917 opened a new era: scientific socialism realized as a state."
+          },
+          "values": {
+            "title": "Long-term, enduring values",
+            "content": "Despite global changes, scientific socialism remains the ideological foundation for many communist and workers’ parties."
+          }
+        },
+        "finalQuote": "\"It can be said that scientific socialism is both the torch of theory lighting the way, and the political–social driving force for the workers’ movement and oppressed nations.\""
+      }
+    }
+  },
+  "infographic": {
+    "subtitle": "UTOPIAN SOCIALISM & SCIENTIFIC SOCIALISM",
+    "intro": "Socialism has gone through many stages of development. From the early humanitarian thinkers' ideal dreams, to the scientific theories of Karl Marx and Friedrich Engels, socialism gradually became a social movement with a clear theoretical basis and method of struggle.",
+    "comparisonTitle": "Comparison: Utopian vs Scientific Socialism",
+    "timelineTitle": "Timeline: From Utopian → Scientific Socialism",
+    "conclusionTitle": "Conclusion",
+    "conclusionText": "Utopian socialism left behind humanistic values and ideals of justice, while scientific socialism provided the theoretical foundation, method, and strategy for the working-class movement to realize those goals. Both played important roles in the history of humankind.",
+    "table": [
+      {
+        "aspect": "Formation period",
+        "utopian": "Early 19th century, when capitalism was just developing, the working class was immature.",
+        "scientific": "Mid-19th century (after 1848), when the working class had formed and engaged in strong struggles."
+      },
+      {
+        "aspect": "Theoretical basis",
+        "utopian": "Willpower, morality, dreams of a good society",
+        "scientific": "Historical–social laws, historical materialism, class struggle"
+      },
+      {
+        "aspect": "Method",
+        "utopian": "Designing “ideal models”, persuading upper classes",
+        "scientific": "Scientific analysis, organizing workers, social revolution"
+      },
+      {
+        "aspect": "Subject",
+        "utopian": "Humanitarian “reformers”",
+        "scientific": "The working class allied with other laboring forces"
+      },
+      {
+        "aspect": "Goal",
+        "utopian": "Justice, charity, cooperation",
+        "scientific": "Abolishing exploitation, establishing socialism/communism by real forces"
+      },
+      {
+        "aspect": "How to achieve",
+        "utopian": "Experimental communities, appealing to conscience",
+        "scientific": "Political organization, struggle, seizing power, transforming relations of production"
+      },
+      {
+        "aspect": "Limitations/Advantages",
+        "utopian": "Humanistic but impractical, lacking scientific laws",
+        "scientific": "Scientific and historically feasible; still requires creative adaptation to each era"
+      },
+      {
+        "aspect": "Legacy",
+        "utopian": "Ideas of justice, welfare",
+        "scientific": "Theoretical framework and method for the modern workers’ movement"
+      }
+    ],
+    "timeline": [
+      {
+        "year": "1516",
+        "event": "Utopia (Thomas More): early ideas of equality"
+      },
+      {
+        "year": "Late 18th – early 19th century",
+        "event": "Saint-Simon, Fourier, Owen: ideal community models → Utopian socialism"
+      },
+      {
+        "year": "1848",
+        "event": "The Communist Manifesto (Marx & Engels): birth of scientific socialism"
+      },
+      {
+        "year": "1864–1876",
+        "event": "First International; 1867 – Capital (Vol. I)"
+      },
+      {
+        "year": "1871",
+        "event": "Paris Commune: first workers' government experiment"
+      },
+      {
+        "year": "1889",
+        "event": "Second International; May Day (May 1st) established"
+      },
+      {
+        "year": "20th century",
+        "event": "Global workers' movement; welfare state, socialist revolutions in some countries"
+      },
+      {
+        "year": "Modern era",
+        "event": "Workers' movement in context of digitization, globalization, platform economy"
+      }
+    ]
+  },
+  "blogpage": {
+    "selectTopic": "Select a history topic:",
+    "summaryTitle": "Summary:",
+    "fullContentTitle": "Full content:",
+    "loading": "Loading history content...",
+    "error": "Error:",
+    "updatedAt": "Updated:",
+    "readMore": "📖 Read more on Wikipedia",
+    "topics": {
+      "Karl_Marx": {
+        "title": "Karl Marx",
+        "description": "Great thinker of socialism"
+      },
+      "Friedrich_Engels": {
+        "title": "Friedrich Engels",
+        "description": "Co-founder of scientific socialism"
+      },
+      "Vladimir_Lenin": {
+        "title": "Vladimir Lenin",
+        "description": "Russian revolutionary leader and Marxist theorist"
+      },
+      "Ho_Chi_Minh": {
+        "title": "Ho Chi Minh",
+        "description": "President Ho Chi Minh - National hero"
+      },
+      "Communist_Manifesto": {
+        "title": "Communist Manifesto",
+        "description": "Classic work by Marx and Engels"
+      },
+      "Russian_Revolution": {
+        "title": "Russian Revolution 1917",
+        "description": "The revolution that changed the world"
+      }
+    }
+  },
+  "socialistComparison": {
+    "subtitle": "2. Comparison of Utopian Socialism and Scientific Socialism",
+    "criteria": [
+      {
+        "title": "Period",
+        "utopian": "Early 19th century, capitalism emerging, working class not mature.",
+        "scientific": "Mid 19th century (after 1848), working class formed and struggling strongly."
+      },
+      {
+        "title": "Theoretical basis",
+        "utopian": "Based on moral ideals, altruism, and aspiration for fairness.",
+        "scientific": "Based on historical materialism and dialectical materialism; scientifically analyzing social development laws."
+      },
+      {
+        "title": "Goal",
+        "utopian": "Dream of building a fair, equal, and charitable society.",
+        "scientific": "Build a communist society through class struggle and proletarian revolution."
+      },
+      {
+        "title": "Method",
+        "utopian": "Proposes ideal models (communal living, fair distribution…), but no concrete implementation.",
+        "scientific": "Linked with labor movement, political struggle, social revolution, organizing revolutionary party."
+      },
+      {
+        "title": "Representative figures",
+        "utopian": "Henri de Saint-Simon, Charles Fourier, Robert Owen.",
+        "scientific": "Karl Marx, Friedrich Engels."
+      },
+      {
+        "title": "Advantages / Limitations",
+        "utopian": "Advantages: inspires desire for justice, highlights capitalist injustice.\nLimitations: lacks scientific basis, impractical in reality.",
+        "scientific": "Advantages: scientific, practical for workers’ movement, revolutionary guidance.\nLimitations: needs to be supplemented and developed through historical practice."
+      }
+    ]
+  },
+  "interactiveWorldMap": {
+    "title": "🌍 Socialist Thought Map",
+    "clickInfo": "Click on the points to see historical details",
+    "eventsCount": "{count} events displayed",
+    "timelineTitle": "🕰️ Development Timeline",
+    "periods": [
+      {
+        "id": "all",
+        "name": "All",
+        "color": "#6B7280"
+      },
+      {
+        "id": "ancient",
+        "name": "Ancient Times",
+        "color": "#8B4513"
+      },
+      {
+        "id": "medieval",
+        "name": "Medieval Period",
+        "color": "#4A5568"
+      },
+      {
+        "id": "modern",
+        "name": "18-19th Century",
+        "color": "#2B6CB0"
+      },
+      {
+        "id": "scientific",
+        "name": "Scientific Socialism",
+        "color": "#DC2626"
+      }
+    ],
+    "historicalEvents": [
+      {
+        "id": "plato",
+        "name": "Plato - Republic",
+        "year": "380 BC",
+        "location": "Athens, Greece",
+        "coordinates": {
+          "x": 55,
+          "y": 45
+        },
+        "description": "Ideal society with class division based on talent",
+        "color": "#8B4513",
+        "period": "ancient",
+        "icon": "🏛️",
+        "number": 1
+      },
+      {
+        "id": "more",
+        "name": "Thomas More - Utopia",
+        "year": "1516",
+        "location": "London, UK",
+        "coordinates": {
+          "x": 50,
+          "y": 35
+        },
+        "description": "Society without private property, everyone equal",
+        "color": "#4A5568",
+        "period": "medieval",
+        "icon": "📚",
+        "number": 2
+      },
+      {
+        "id": "campanella",
+        "name": "Campanella - City of the Sun",
+        "year": "1623",
+        "location": "Calabria, Italy",
+        "coordinates": {
+          "x": 52,
+          "y": 42
+        },
+        "description": "Ideal communal society with common property",
+        "color": "#4A5568",
+        "period": "medieval",
+        "icon": "☀️",
+        "number": 3
+      },
+      {
+        "id": "saint-simon",
+        "name": "Saint-Simon",
+        "year": "1821",
+        "location": "Paris, France",
+        "coordinates": {
+          "x": 51,
+          "y": 38
+        },
+        "description": "Emphasized role of science, engineers, industrialists",
+        "color": "#2B6CB0",
+        "period": "modern",
+        "icon": "🔬",
+        "number": 4
+      },
+      {
+        "id": "fourier",
+        "name": "Charles Fourier",
+        "year": "1808",
+        "location": "Besançon, France",
+        "coordinates": {
+          "x": 51.5,
+          "y": 37
+        },
+        "description": "Phalanstère communities living together and sharing",
+        "color": "#2B6CB0",
+        "period": "modern",
+        "icon": "🏘️",
+        "number": 5
+      },
+      {
+        "id": "owen",
+        "name": "Robert Owen",
+        "year": "1813",
+        "location": "New Lanark, Scotland",
+        "coordinates": {
+          "x": 49,
+          "y": 32
+        },
+        "description": "Social reform through model industrial communities",
+        "color": "#2B6CB0",
+        "period": "modern",
+        "icon": "🏭",
+        "number": 6
+      },
+      {
+        "id": "marx-engels",
+        "name": "Marx & Engels",
+        "year": "1848",
+        "location": "London, UK",
+        "coordinates": {
+          "x": 50,
+          "y": 35
+        },
+        "description": "Communist Manifesto - Scientific Socialism",
+        "color": "#DC2626",
+        "period": "scientific",
+        "icon": "⚡",
+        "number": 7
+      }
+    ]
+  },
+  "footer": {
+    "title": "Marx–Lenin Philosophy",
+    "description": "MLN131 - Academic platform for Marx-Lenin philosophy studies.",
+    "contact": {
+      "title": "Contact",
+      "email": "Email: info@mln131.com",
+      "phone": "Phone: +84 90 123 4567",
+      "address": "Address: 32 Võ Văn Hát, Long Trường, Thủ Đức, Ho Chi Minh City, Vietnam"
+    },
+    "followUs": "Follow Us",
+    "slogan": "Workers of the world, unite!"
+  },
+  "quiz": {
+    "quizTitle": "Mini-Quiz",
+    "question": "Question",
+    "answer": "Answer",
+    "explanation": "Explanation",
+    "correct": "🎉 Correct!",
+    "wrong": "😢 Wrong",
+    "resultTitle": "Quiz Results",
+    "score": "Your score: {score} / {total}",
+    "playAgain": "Play Again",
+    "questions": [
+      {
+        "question": "What does 'Utopian Socialism' emphasize?",
+        "options": [
+          {
+            "text": "Objective economic laws",
+            "value": "A"
+          },
+          {
+            "text": "Ethics & ideal society models",
+            "value": "B",
+            "correct": true
+          },
+          {
+            "text": "Revolutionary violence",
+            "value": "C"
+          },
+          {
+            "text": "Technology",
+            "value": "D"
+          }
+        ],
+        "explanation": "Utopian Socialism focuses on moral ideals and ideal social models, proposed by thinkers like Owen and Fourier, without a scientific basis."
+      },
+      {
+        "question": "Which document marks the transition to Scientific Socialism?",
+        "options": [
+          {
+            "text": "Das Kapital (Vol. I)",
+            "value": "A"
+          },
+          {
+            "text": "Utopia",
+            "value": "B"
+          },
+          {
+            "text": "The Communist Manifesto (1848)",
+            "value": "C",
+            "correct": true
+          },
+          {
+            "text": "Declaration of Human Rights",
+            "value": "D"
+          }
+        ],
+        "explanation": "The Communist Manifesto by Marx and Engels in 1848 marks the shift from Utopian to Scientific Socialism."
+      },
+      {
+        "question": "Who is the central subject of Scientific Socialism?",
+        "options": [
+          {
+            "text": "Intellectuals",
+            "value": "A"
+          },
+          {
+            "text": "Enlightened nobility",
+            "value": "B"
+          },
+          {
+            "text": "Working class",
+            "value": "C",
+            "correct": true
+          },
+          {
+            "text": "Individual peasants",
+            "value": "D"
+          }
+        ],
+        "explanation": "The working class is considered the central force in Scientific Socialism, leading social revolution."
+      },
+      {
+        "question": "What lesson did the Paris Commune (1871) provide?",
+        "options": [
+          {
+            "text": "Self-regulating market",
+            "value": "A"
+          },
+          {
+            "text": "Workers can self-manage the state",
+            "value": "B",
+            "correct": true
+          },
+          {
+            "text": "Abolish elections",
+            "value": "C"
+          },
+          {
+            "text": "Rigid central planning",
+            "value": "D"
+          }
+        ],
+        "explanation": "The Paris Commune demonstrated that workers could self-manage the state, an advanced model of Scientific Socialism."
+      },
+      {
+        "question": "In Vietnam, 'socialist-oriented market economy' emphasizes:",
+        "options": [
+          {
+            "text": "Only state ownership",
+            "value": "A"
+          },
+          {
+            "text": "Growth with fairness, social welfare, state role",
+            "value": "B",
+            "correct": true
+          },
+          {
+            "text": "Closed-door economy",
+            "value": "C"
+          },
+          {
+            "text": "Ignore rule of law",
+            "value": "D"
+          }
+        ],
+        "explanation": "Vietnam's socialist-oriented market economy combines economic growth with social equity and state governance."
+      },
+      {
+        "question": "Who laid the foundations of Utopian Socialism?",
+        "options": [
+          {
+            "text": "Karl Marx",
+            "value": "A"
+          },
+          {
+            "text": "Friedrich Engels",
+            "value": "B"
+          },
+          {
+            "text": "Robert Owen",
+            "value": "C",
+            "correct": true
+          },
+          {
+            "text": "Vladimir Lenin",
+            "value": "D"
+          }
+        ],
+        "explanation": "Robert Owen was one of the earliest Utopian Socialists proposing ethical and cooperative ideal communities."
+      },
+      {
+        "question": "What is the key difference between Scientific and Utopian Socialism?",
+        "options": [
+          {
+            "text": "Use violence instead of ideals",
+            "value": "A"
+          },
+          {
+            "text": "Based on scientific and economic analysis",
+            "value": "B",
+            "correct": true
+          },
+          {
+            "text": "Focus only on peasants",
+            "value": "C"
+          },
+          {
+            "text": "Remove working class role",
+            "value": "D"
+          }
+        ],
+        "explanation": "Scientific Socialism by Marx and Engels relies on historical and economic analysis, unlike Utopian Socialism which is based on subjective ideals."
+      },
+      {
+        "question": "Which work of Marx & Engels is the theoretical foundation of Scientific Socialism?",
+        "options": [
+          {
+            "text": "Utopia",
+            "value": "A"
+          },
+          {
+            "text": "Das Kapital",
+            "value": "B"
+          },
+          {
+            "text": "The Communist Manifesto",
+            "value": "C",
+            "correct": true
+          },
+          {
+            "text": "State and Revolution",
+            "value": "D"
+          }
+        ],
+        "explanation": "The Communist Manifesto (1848) lays the foundation of Scientific Socialism with a class struggle perspective."
+      },
+      {
+        "question": "When did Utopian Socialism mainly appear?",
+        "options": [
+          {
+            "text": "19th century",
+            "value": "A"
+          },
+          {
+            "text": "18th century",
+            "value": "B",
+            "correct": true
+          },
+          {
+            "text": "20th century",
+            "value": "C"
+          },
+          {
+            "text": "17th century",
+            "value": "D"
+          }
+        ],
+        "explanation": "Utopian Socialism flourished in the 18th century with thinkers like Rousseau, More, and social reformers."
+      },
+      {
+        "question": "What is the ultimate goal of Scientific Socialism?",
+        "options": [
+          {
+            "text": "Classless, ideal society",
+            "value": "A",
+            "correct": true
+          },
+          {
+            "text": "Empower the nobility",
+            "value": "B"
+          },
+          {
+            "text": "Maximize technology",
+            "value": "C"
+          },
+          {
+            "text": "Protect capitalism",
+            "value": "D"
+          }
+        ],
+        "explanation": "Scientific Socialism aims for a classless society where people are liberated from economic and social oppression."
+      }
+    ]
   }
 }
