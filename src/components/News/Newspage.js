@@ -7,6 +7,7 @@ import { LANGUAGES } from "../../utils/constant";
 
 import "./Newspage.css";
 import photo11 from "../../assets/photo11.png";
+import article from "../../assets/article.jpeg";
 
 export default function News() {
   const language = useSelector((state) => state.language);
@@ -99,11 +100,12 @@ export default function News() {
             </div>
 
             <div className="section-image-container">
-              <img
+              {/* <img
                 src="https://truongchinhtri.gialai.org.vn/getattachment/29477e94-f6b6-4a18-ae7d-870b5874f0a5/H2.jpg.aspx"
                 alt="Lenin"
                 className="content-img"
-              />
+              /> */}
+              <img src={article} className="content-img" alt="Lenin" />
               <div className="image-overlay">
                 <span className="image-caption">
                   {labels.sections.section2.caption}
