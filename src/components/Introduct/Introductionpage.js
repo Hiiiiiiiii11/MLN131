@@ -7,6 +7,13 @@ import { useSelector } from "react-redux";
 import enTranslations from "../../translations/en.json";
 import viTranslations from "../../translations/vn.json";
 import { LANGUAGES } from "../../utils/constant";
+import image6 from '../../assets/image.png';
+import image7 from '../../assets/image (3).png';
+import image8 from '../../assets/image (5).png';
+import image9 from '../../assets/image (1).png';
+import image10 from '../../assets/image (8).png';
+
+
 
 const Introduction = () => {
   const [selectedCard, setSelectedCard] = useState(null);
@@ -18,20 +25,21 @@ const Introduction = () => {
   const characters = [
     {
       name: "Henri de Saint-Simon",
-      image: "https://sociologiaifdtbo.wordpress.com/wp-content/uploads/2013/05/saint-simon1.jpg",
+      image: image6,
     },
     {
-      name: "Joseph Fourier",
-      image: "https://c8.alamy.com/comp/HKXWBK/jean-baptiste-joseph-fourier-1768-1830-mathematician-physicist-HKXWBK.jpg",
+      name: "charles fourier (Pháp)",
+      image: image7,
     },
-    { name: "Robert Owen", image: "https://www.art-prints-on-demand.com/kunst/english_school/robert_owen.jpg" },
+    { name: "Robert Owen (Anh).", 
+      image: image8, },
     {
       name: "Karl Marx",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Karl_Marx_001.jpg/150px-Karl_Marx_001.jpg",
+      image: image9,
     },
     {
       name: "Friedrich Engels",
-      image: "https://images.hcmcpv.org.vn/res/news/2021/11/28-11-2021-friedrich-engels-lanh-tu-vi-dai-cua-giai-cap-cong-nhan-va-nhung-nguoi-cong-san-511B6A81.jpg",
+      image: image10,
     },
   ];
 

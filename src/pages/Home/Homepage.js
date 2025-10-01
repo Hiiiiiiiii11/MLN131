@@ -23,44 +23,50 @@ const Home = () => {
         <p className="home-subtitle">{labels.subtitle}</p>
       </div>
 
-      {/* Karl Marx */}
-      <div className="home-content-with-image">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Karl_Marx_001.jpg/330px-Karl_Marx_001.jpg"
-          alt="Karl Marx"
-          className="home-side-image"
-        />
-        <div className="home-text-content">
-          <h2>{labels.marxTitle}</h2>
-          <p>{labels.marxContent}</p>
-        </div>
-      </div>
+     {/* Karl Marx */}
+<div className="home-content-with-image">
+  <a href="https://en.wikipedia.org/wiki/Karl_Marx" target="_blank" rel="noopener noreferrer">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Karl_Marx_001.jpg/330px-Karl_Marx_001.jpg"
+      alt="Karl Marx"
+      className="home-side-image"
+    />
+  </a>
+  <div className="home-text-content">
+    <h2>{labels.marxTitle}</h2>
+    <p>{labels.marxContent}</p>
+  </div>
+</div>
 
-      {/* Engels */}
-      <div className="home-content-with-image">
-        <img
-          src="https://images.hcmcpv.org.vn/res/news/2021/11/28-11-2021-friedrich-engels-lanh-tu-vi-dai-cua-giai-cap-cong-nhan-va-nhung-nguoi-cong-san-511B6A81.jpg"
-          alt="Friedrich Engels"
-          className="home-side-image"
-        />
-        <div className="home-text-content">
-          <h2>{labels.engelsTitle}</h2>
-          <p>{labels.engelsContent}</p>
-        </div>
-      </div>
+{/* Engels */}
+<div className="home-content-with-image">
+  <a href="https://en.wikipedia.org/wiki/Friedrich_Engels" target="_blank" rel="noopener noreferrer">
+    <img
+      src="https://images.hcmcpv.org.vn/res/news/2021/11/28-11-2021-friedrich-engels-lanh-tu-vi-dai-cua-giai-cap-cong-nhan-va-nhung-nguoi-cong-san-511B6A81.jpg"
+      alt="Friedrich Engels"
+      className="home-side-image"
+    />
+  </a>
+  <div className="home-text-content">
+    <h2>{labels.engelsTitle}</h2>
+    <p>{labels.engelsContent}</p>
+  </div>
+</div>
 
-      {/* Lenin */}
-      <div className="home-content-with-image">
-        <img
-          src="https://tulieuvankien.dangcongsan.vn/Uploads/2018/5/5/2/lenin-lenin.jpg"
-          alt="Lenin"
-          className="home-side-image"
-        />
-        <div className="home-text-content">
-          <h2>{labels.leninTitle}</h2>
-          <p>{labels.leninContent}</p>
-        </div>
-      </div>
+{/* Lenin */}
+<div className="home-content-with-image">
+  <a href="https://en.wikipedia.org/wiki/Vladimir_Lenin" target="_blank" rel="noopener noreferrer">
+    <img
+      src="https://tulieuvankien.dangcongsan.vn/Uploads/2018/5/5/2/lenin-lenin.jpg"
+      alt="Lenin"
+      className="home-side-image"
+    />
+  </a>
+  <div className="home-text-content">
+    <h2>{labels.leninTitle}</h2>
+    <p>{labels.leninContent}</p>
+  </div>
+</div>
 
       {/* Section 1 */}
       <div className="home-text-content">
