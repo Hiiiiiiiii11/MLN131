@@ -444,15 +444,15 @@
 
 .significance-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8rem;
   margin-bottom: 3rem;
   animation: fadeInUp 0.8s ease-out 0.4s both;
 }
 
 .significance-card {
   background: white;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 20px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(102, 126, 234, 0.1);

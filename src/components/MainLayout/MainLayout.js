@@ -12,6 +12,12 @@ import photo2 from '../../assets/photo2.png';
 import photo3 from '../../assets/photo3.png';
 import photo4 from '../../assets/photo4.png';
 import photo5 from '../../assets/photo5.png';
+import image1 from '../../assets/image (10).png';
+import image2 from '../../assets/image (11).png';
+import image3 from '../../assets/image (12).png';
+import image4 from '../../assets/image (13).png';
+import image5 from '../../assets/image (14).png';
+
 
 import enTranslations from "../../translations/en.json";
 import viTranslations from "../../translations/vn.json";
@@ -78,11 +84,16 @@ const MainLayout = () => {
     };
 
     const images = [
-        { url: photo1, link: "#1" },
-        { url: photo2, link: "#2" },
-        { url: photo3, link: "#3" },
-        { url: photo4, link: "#4" },
-        { url: photo5, link: "#5" },
+        // { url: photo1, link: "#1" },
+        // { url: photo2, link: "#2" },
+        // { url: photo3, link: "#3" },
+        // { url: photo4, link: "#4" },
+        // { url: photo5, link: "#5" },
+        { url: image1, link: "#6" },
+        { url: image2, link: "#7" },
+        { url: image3, link: "#8" },
+        { url: image4, link: "#9" },
+        { url: image5, link: "#10" },
     ];
 
     return (
