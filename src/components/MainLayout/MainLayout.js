@@ -17,7 +17,7 @@ import image2 from "../../assets/image (11).png";
 import image3 from "../../assets/image (12).png";
 import image4 from "../../assets/image (13).png";
 import image5 from "../../assets/image (14).png";
-import image6 from "../../assets/1.png";
+import image6 from "../../assets/14.png";
 import image7 from "../../assets/2.png";
 import image8 from "../../assets/3.png";
 import image9 from "../../assets/4.png";
