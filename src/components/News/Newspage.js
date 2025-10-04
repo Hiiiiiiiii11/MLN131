@@ -9,6 +9,11 @@ import "./Newspage.css";
 import photo11 from "../../assets/photo11.png";
 import article from "../../assets/article.jpeg";
 
+import photo22 from "../../assets/22.png";
+import photo23 from "../../assets/23.png";
+import photo24 from "../../assets/100.png";
+import photo25 from "../../assets/6.png";
+
 export default function News() {
   const language = useSelector((state) => state.language);
 
@@ -217,12 +222,31 @@ export default function News() {
               </div>
             </div>
 
-            <div className="final-quote">
+            
+          </div>
+           {/* Section 1 */}
+        <section className="content-section">
+          <div className="section-header">
+            <span className="section-number">5</span>
+            <h2> Vận Dụng Vào Bối Cảnh Việt Nam Hiện Nay</h2>
+          </div>
+    <div className="section-image-container">
+           
+              <img src={photo22} className="content-img" alt="Lenin" />
+                <img src={photo23} className="content-img" alt="Lenin" />
+                  <img src={photo24} className="content-img" alt="Lenin" />
+                    <img src={photo25} className="content-img" alt="Lenin" />
+              <div className="image-overlay">
+             
+              </div>
+            </div>
+       
+        </section>
+        <div className="final-quote">
               <blockquote>{labels.sections.section4.finalQuote}</blockquote>
             </div>
-          </div>
-          
         </section>
+
       </div>
         <header className="news-header">
         <div className="news-header-content">
