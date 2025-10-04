@@ -22,6 +22,7 @@ import image7 from "../../assets/2.png";
 import image8 from "../../assets/3.png";
 import image9 from "../../assets/4.png";
 import image10 from "../../assets/5.png";
+import image11 from "../../assets/6.png";
 
 import enTranslations from "../../translations/en.json";
 import viTranslations from "../../translations/vn.json";
@@ -96,6 +97,7 @@ const MainLayout = () => {
         { url: image8, link: "#3" },
         { url: image9, link: "#4" },
         { url: image10, link: "#5" },
+        { url: image11, link: "#11" },
     ];
 
     return (
