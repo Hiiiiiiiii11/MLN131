@@ -226,7 +226,7 @@ export default function News() {
       </div>
         <header className="news-header">
         <div className="news-header-content">
-          <h1 className="news-main-title">Chũ Nghĩa Xã Hội Không Tưởng</h1>
+          <h1 className="news-main-title">Chủ Nghĩa Xã Hội Không Tưởng</h1>
           <p className="news-subtitle">{labels.header.subtitle}</p>
         </div>
         <div className="header-decoration"></div>

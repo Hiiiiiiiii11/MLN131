@@ -25,6 +25,8 @@ const Footer = () => {
                 <div className="footer-section">
                     <h3>{t.title}</h3>
                     <p>{t.description}</p>
+                    <p>Chủ Nghĩa Xã Hội Khoa Học</p>
+                    <p>Chủ Nghĩa Xã Hội Không Tưởng</p>
                 </div>
 
                 <div className="footer-section">
@@ -40,7 +42,7 @@ const Footer = () => {
                         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon">
                             <FacebookOutlined style={{ color: "#4267B2", fontSize: "22px" }} />
                         </a>
-                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+                        <a href="https://youtu.be/R7T-a7MSJik?si=sb3CVXeqFKXH_XR2" target="_blank" rel="noopener noreferrer" className="social-icon">
                             <YoutubeOutlined style={{ color: "#ac182bff", fontSize: "22px" }} />
                         </a>
                         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon">
@@ -49,84 +51,32 @@ const Footer = () => {
                     </div>
 
                 </div>
-<div className="footer-section" >
-    <h3 style={{
-        fontSize: '18px',
-        fontWeight: '600',
-        marginBottom: '15px',
-        color: '#e74c3c',
-        textTransform: 'uppercase',
-        letterSpacing: '1px',
-        textAlign: 'center'
-    }}>Đóng Góp Thành Viên</h3>
-    <div className="table-container" style={{
-        width: '100%',
-        overflowX: 'auto'
-    }}>
-        <table style={{
-            width: '100%',
-            borderCollapse: 'collapse',
-            backgroundColor: 'rgba(255, 255, 255, 0.1)',
-            boxShadow: '0 12px 14px rgba(0, 0, 0, 0.2)',
-            fontFamily: "'Calibri', sans-serif",
-            
-            fontSize: '14px'
-        }}>
-            <thead>
-                <tr>
-                    <th style={{
-                        padding: '12px 15px',
-                        textAlign: 'left',
-                        backgroundColor: '#d9e1f2',
-                        color: '#2c3e50',
-                        fontWeight: '600',
-                        border: '1px solid #b7c7d6'
-                    }}>Tên</th>
-                    <th style={{
-                        padding: '12px 15px',
-                        textAlign: 'left',
-                        backgroundColor: '#d9e1f2',
-                        color: '#2c3e50',
-                        fontWeight: '600',
-                        border: '1px solid #b7c7d6'
-                    }}>MSSV</th>
-                    <th style={{
-                        padding: '12px 15px',
-                        textAlign: 'left',
-                        backgroundColor: '#d9e1f2',
-                        color: '#2c3e50',
-                        fontWeight: '600',
-                        border: '1px solid #b7c7d6'
-                    }}>Vai trò</th>
-                </tr>
-            </thead>
-            <tbody>
-                {sampleData.map((member, index) => (
-                    <tr key={member.id} style={{
-                        backgroundColor: index % 2 === 0 ? '#ffffff' : '#f5f7fa',
-                        transition: 'background-color 0.2s'
-                    }}>
-                        <td style={{
-                            padding: '12px 15px',
-                            border: '1px solid #b7c7d6',
-                            color: '#2c3e50'
-                        }}>{member.name}</td>
-                        <td style={{
-                            padding: '12px 15px',
-                            border: '1px solid #b7c7d6',
-                            color: '#2c3e50'
-                        }}>{member.mssv}</td>
-                        <td style={{
-                            padding: '12px 15px',
-                            border: '1px solid #b7c7d6',
-                            color: '#2c3e50'
-                        }}>{member.role}</td>
-                    </tr>
-                ))}
-            </tbody>
+ <div className="footer-section">
+      <h3 className="footer-title">Đóng Góp Thành Viên</h3>
+      <div className="table-container">
+        <table className="member-table">
+          <thead>
+            <tr>
+              <th>Tên</th>
+              <th>MSSV</th>
+              <th>Vai trò</th>
+            </tr>
+          </thead>
+          <tbody>
+            {sampleData.map((member, index) => (
+              <tr
+                key={member.id}
+                className={index % 2 === 0 ? "even-row" : "odd-row"}
+              >
+                <td>{member.name}</td>
+                <td>{member.mssv}</td>
+                <td>{member.role}</td>
+              </tr>
+            ))}
+          </tbody>
         </table>
+      </div>
     </div>
-</div>
             </div>
 
             <div className="footer-bottom">
